@@ -1,0 +1,15 @@
+> Resolving dependencies using Composer Cloud v3.8.1
+
+[8.4MiB/0.20s] Loading composer repositories with package information
+[101.1MiB/14.02s] Updating dependencies
+[201.5MiB/15.27s] Your requirements could not be resolved to an installable set of packages.
+[201.5MiB/15.28s] 
+  Problem 1
+    - Root composer.json requires danielgausi/contao-calendareditor-bundle ^4.3, found danielgausi/contao-calendareditor-bundle[dev-main] but it does not match the constraint.
+
+[201.5MiB/15.28s] <warning>Running update with --no-dev does not mean require-dev is ignored, it just means the packages will not be installed. If dev requirements are blocking the update you have to resolve those problems.</warning>
+[65.9MiB/15.40s] Memory usage: 65.9MB (peak: 236.4MB), time: 15.43s.
+[65.9MiB/15.41s] Finished Composer Cloud resolving.
+
+
+# Cloud Job ID HDADg3YGRCWDtBXE4AXf4FfdmEjzWJCpwHj1vR7DMLY0FnqQJSNzSYcl4I9uHKMA9knYp4EoBoUqHBVtoEmvFnX failed

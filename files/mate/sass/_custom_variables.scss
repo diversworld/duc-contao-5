@@ -1,0 +1,189 @@
+/****
+ **** mate theme files / custom_variables
+ **** uncomment to override materialize variables
+ ****
+ */
+
+/*
+ * mate theme files / custom_variables
+ *
+ * uncomment to override materialize variables
+ */
+
+
+/* ============================= */
+/*     MATE Theme Variables      */
+/* ============================= */
+
+/* Colors */
+//$primary-color: $mateColor2;
+//$secondary-color: $mateColor3;
+
+/* Fonts */
+//$font1: 'Lato Light';
+//$font2: 'Old Standard';
+//$font3: 'Lato Regular';
+
+/* Links */
+//$primary-link-font-color: $mateColor2;
+//$primary-link-hover-font-color: $mateColor3;
+
+/* Accordion */
+//$accordion-headline-background: $mateColor2;
+//$accordion-headline-color: $secondary-text-color;
+//$accordion-content-background: $mateColorWhite;
+//$accordion-content-color: $primary-text-color;
+//$accordion-border-color: $mateColorWhite;
+
+/* Buttons */
+//$button-flat-color: $secondary-text-color;
+//$button-floating-background: $mateColor2;
+//$button-floating-background-hover: $mateColor3;
+
+/* Breadcrumb */
+//$breadcrumb-background: rgba($mateColor2,.08);
+//$breadcrumb-link: $primary-link-font-color;
+//$breadcrumb-link-hover: $primary-link-hover-font-color;
+
+/* Content Box */
+//$contentbox-first-color: $primary-text-color;
+//$contentbox-second-color: $primary-text-color;
+//$contentbox-first-background: rgba($boxes-background, 0.95);
+//$contentbox-second-background: rgba($boxes-background, 0.65);
+
+/* Download and FAQ Elements */
+//$download-faqlist-background-odd: rgba($mateColor2, 0.15);
+//$download-faqlist-color-odd: $mateColor2;
+//$download-faqlist-color-odd-hover: $mateColor3;
+
+//$download-faqlist-background-even: $mateColorWhite;
+//$download-faqlist-color-even: $mateColor2;
+//$download-faqlist-color-even-hover: $mateColor3;
+
+/* Events and News */
+//$calendar-background: $mateColorWhite;
+//$calendar-border-color: $mateColorWhite;
+//$calendar-text-color: $mateColor2;
+
+//$news-date-color: $mateColor6;
+//$news-category-color: #fff;
+//$pagination-color: $mateColor4;
+
+/* Footer */
+//$footer-newsletter-bg-color: $mateColor1;
+//$footer-newsletter-color: $mateColor3;
+//$footer-newsletter-button-background: $mateColor2;
+//$footer-newsletter-button-background-hover: $button-floating-background-hover;
+//$footer-input-bg-color: #f4f8f0;
+//$footer-input-color: $mateColorBlack;
+
+//$footer-primary-bg-color: $mateColor2;
+//$footer-primary-color: $footer-text-color;
+//$footer-primary-link-color: $secondary-text-color;
+//$footer-primary-link-color-hover: $primary-link-hover-font-color;
+//$footer-headline-border-color: $secondary-text-color;
+//$footer-news-events-time-color: $mateColor3;
+
+//$footer-secondary-bg-color: $mateColor3;
+//$footer-secondary-color: $footer-text-color;
+//$footer-secondary-link-color: $secondary-text-color;
+//$footer-secondary-link-color-hover: $secondary-text-color;
+
+/* Header Image */
+//$headerHeadlineBackground: rgba($mateColor2, 0.9);
+//$headerHeadlineColor: #ffffff; //$secondary-text-color;
+
+/* Header and Navigation */
+//$header-top-color: #314AB8; //#005ADE; //Hintergrundfarbe Top Leiste;
+//$navbar-bg-color: lighten(#314AB8, 10%); // Hintergrundfarbe der Navigation
+//$navbar-color: #fff; // Schriftfarbe der Links
+//$navbar-active-color: #ccc; // Schriftfarbe des aktiven Menüpunkts und bei Mouse-Hover
+//$navbar-dropdown-hover-bg-color: lighten(#314AB8, 10%); // Hintergrundfarbe des Dropdown-Menü bei Mouse-Hover
+//$navbar-dropdown-hover-color: #ccc; // Schriftfarbe des Dropdown-Menü bei Mouse-Hover
+//$navbar-dropdown-bg: #314AB8; // Hintergrundfarbe des Dropdown-Menü
+//$navbar-dropdown-color: #fff; // Schriftfarbe der Links im Dropdown-Menü
+//$navbar-search-color: #fff; // Farbe des Suchicons
+
+//$navbar-stuck-bg-color: rgba(#314AB8, .8); // Hintergrundfarbe der Navigation
+//$navbar-stuck-color: #fff; // Schriftfarbe der Links
+//$navbar-stuck-active-color: #ccc; // Schriftfarbe des aktiven Menüpunkts und bei Mouse-Hover
+//$navbar-stuck-dropdown-hover-bg-color: lighten(#314AB8, 10%); // Hintergrundfarbe des Dropdown-Menü bei Mouse-Hover
+//$navbar-stuck-dropdown-hover-color: #ccc; // Schriftfarbe des Dropdown-Menü bei Mouse-Hover
+//$navbar-stuck-dropdown-color: #fff; // Hintergrundfarbe des Dropdown-Menü
+//$navbar-stuck-dropdown-bg: #314AB8; // Schriftfarbe der Links im Dropdown-Menü
+//$navbar-stuck-search-color: #fff; // Farbe des Suchicons
+
+//$navbar-mobile-menu-icon-color: #fff; // Farbe des mobilen Burgermenu-Icons
+//$navbar-stuck-mobile-menu-icon-color: #fff; // Farbe des mobilen Burgermenu-Icons, wenn die Navigation am oberen Bildschirmrand stehen bleibt
+//$navbar-mobile-background: #314AB8; // Hintergrundfarbe
+//$navbar-mobile-color: #fff; // Schriftfarbe der Links
+//$navbar-mobile-dropdown-background: lighten(#314AB8, 10%); // Hintergrundfarbe der weiteren Menüebenen
+//$navbar-mobile-dropdown-color: #fff; // Schriftfarbe der weiteren Menüebenen
+
+//--------------------------------------------------------
+
+//$navbar-bg-color: #003388; //$mateColorWhite;
+//$navbar-color: #ffffff; //$primary-text-color;
+//$navbar-active-color: #9EA5FF; //$primary-link-font-color;
+//$navbar-dropdown-hover-bg-color: lighten(#003388, 10%); //$mateColor1;
+//$navbar-dropdown-hover-color: #ffffff; //$secondary-text-color;
+//$navbar-dropdown-bg: #003388; //$mateColorWhite;
+//$navbar-dropdown-color: $primary-text-color;
+//$navbar-search-color: $mateColor2;
+
+//$navbar-mobile-menu-icon-color: #ffffff; //$mateColor2;
+//$navbar-stuck-bg-color: rgba($mateColor2, 0.9);
+//$navbar-stuck-color: $secondary-text-color;
+//$navbar-stuck-active-color: $mateColor3;
+//$navbar-stuck-dropdown-hover-bg-color: $mateColor1;
+//$navbar-stuck-dropdown-hover-color: $primary-text-color;
+//$navbar-stuck-dropdown-color: $secondary-text-color;
+//$navbar-stuck-dropdown-bg: rgba($mateColor2, 0.9);
+//$navbar-stuck-search-color: $secondary-text-color;
+//$navbar-stuck-mobile-menu-icon-color: #ffffff; //$secondary-text-color;
+
+//$navbar-mobile-background: #003388; //$mateColor2;
+//$navbar-mobile-color: #ffffff; //$mateColorWhite;
+//$navbar-mobile-dropdown-background:  lighten(#003388, 10%); //$mateColor1;
+//$navbar-mobile-dropdown-color: #ffffff; //$mateColorWhite;
+
+/* News Slider */
+//$slider-background: $mateColor2;
+//$slider-subheadline-color: $secondary-text-color;
+//$slider-headline-color: $secondary-text-color;
+//$slider-teaser-color: $secondary-text-color;
+
+//$slider-button-background: $mateColor1;
+//$slider-button-color: $mateColor3;
+//$slider-button-color-hover: $secondary-text-color;
+//$slider-button-background-hover: $mateColor3;
+
+//$slider-arrows-background: $mateColor4;
+//$slider-arrows-border-color: $mateColor2;
+//$slider-arrows-color: $mateColor2;
+
+//$slider-navigation-background: $mateColorWhite;
+//$slider-navigation-subheadline-color: $mateColor1;
+//$slider-navigation-headline-color: $primary-text-color;
+//$slider-navigation-active-background: $mateColor1;
+//$slider-navigation-active-subheadline-color: $secondary-text-color;
+//$slider-navigation-active-headline-color: $mateColor3;
+//$slider-navigation-hover-background: $mateColor1;
+//$slider-navigation-hover-subheadline-color: $secondary-text-color;
+//$slider-navigation-hover-headline-color: $secondary-text-color;
+//$slider-navigation-border-color: $mateColor1;
+
+/* Subnav Navigation */
+//$subnav-background: $mateColor2;
+//$subnav-color: $secondary-text-color;
+//$subnav-hover-background: $mateColor3;
+//$subnav-hover-color: #fff;
+//$subnav-active-background: $mateColor3;
+//$subnav-active-color: #fff;
+//$subnav-dropdown-background: $mateColor1;
+//$subnav-dropdown-color: $primary-text-color;
+
+/* Tables */
+//$table-odd-background: $mateColorWhite;
+//$table-even-background: $mateColorGreyLight;
+//$table-border-color: $mateColorGreyDark;

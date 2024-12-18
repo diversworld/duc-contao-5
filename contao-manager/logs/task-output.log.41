@@ -1,0 +1,19 @@
+> Resolving dependencies using Composer Cloud v3.8.1
+
+[8.4MiB/0.20s] Loading composer repositories with package information
+[83.4MiB/12.14s] Updating dependencies
+[96.9MiB/12.62s] Your requirements could not be resolved to an installable set of packages.
+[96.9MiB/12.62s] 
+  Problem 1
+    - Root composer.json requires diversworld/contao-ducapp-bundle dev-main, found diversworld/contao-ducapp-bundle[1.0] but it does not match the constraint.
+  Problem 2
+    - Root composer.json requires danielgausi/contao-calendareditor-bundle dev-main -> satisfiable by danielgausi/contao-calendareditor-bundle[dev-main].
+    - danielgausi/contao-calendareditor-bundle dev-main requires hofff/contao-calendarfield ^4.0 -> satisfiable by hofff/contao-calendarfield[4.0.0, 4.0.1].
+    - hofff/contao-calendarfield[4.0.0, ..., 4.0.1] require contao/core-bundle ~4.9 -> found contao/core-bundle[4.9.0, ..., 4.13.50] but these were not loaded, likely because it conflicts with another require.
+
+[96.9MiB/12.62s] <warning>Running update with --no-dev does not mean require-dev is ignored, it just means the packages will not be installed. If dev requirements are blocking the update you have to resolve those problems.</warning>
+[56.3MiB/12.65s] Memory usage: 56.27MB (peak: 208.63MB), time: 12.68s.
+[56.3MiB/12.65s] Finished Composer Cloud resolving.
+
+
+# Cloud Job ID vyedsQHRJIF9VyQFwigmnj9jDem84A0amB4irmmcYIGeVtWyyIVnSeZ5Md78zSAcTkaHc0n failed

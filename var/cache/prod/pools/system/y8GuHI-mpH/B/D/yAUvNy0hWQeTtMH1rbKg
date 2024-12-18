@@ -1,0 +1,3 @@
+<?php //BugBuster%255CVisitorsBundle%255CController%255CFrontendModule%255CVisitorsFrontendController%2523getVisitorsOnlineCount
+
+return [PHP_INT_MAX, []];

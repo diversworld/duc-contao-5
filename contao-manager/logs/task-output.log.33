@@ -1,0 +1,22 @@
+> Resolving dependencies using Composer Cloud v3.8.1
+
+[8.4MiB/0.18s] Loading composer repositories with package information
+[101.1MiB/13.49s] Updating dependencies
+[34.6MiB/14.90s] Lock file operations: 0 installs, 2 updates, 0 removals
+[34.6MiB/14.90s]   - Upgrading danielgausi/contao-calendareditor-bundle (4.3.3 => 4.3.3 4d7468d)
+[34.6MiB/14.90s]   - Upgrading diversworld/contao-ducapp-bundle (1.0 => 1.0 9bba711)
+[33.6MiB/14.92s] Writing lock file
+[19.4MiB/14.96s] <warning>Package php-http/message-factory is abandoned, you should avoid using it. Use psr/http-factory instead.</warning>
+[19.6MiB/15.32s] No security vulnerability advisories found.
+[20.3MiB/15.34s] Memory usage: 20.32MB (peak: 236.47MB), time: 15.37s.
+[20.3MiB/15.35s] Finished Composer Cloud resolving.
+
+
+# Job ID AUcObva2CTnlUnF40kl30yFVwSQKjuL7OYGSFVru7c2GiiewmdPA50aHDO7zYYgJ8pk2aIqcQcEP5VKkaZMT21qiP9aY0C7DLBlrkc9Je0 completed in 13 seconds
+# Memory usage: 20.32MB (peak: 236.47MB), time: 15.37s.
+
+$ /usr/local/bin/php -q -dmax_execution_time=0 -dmemory_limit=-1 -ddisplay_errors=0 -ddisplay_startup_errors=0 -derror_reporting=0 -dallow_url_fopen=1 -ddisable_functions= -ddate.timezone=CET /shared/httpd/duc-contao-5/public/contao-manager.phar.php composer install --no-dev --no-progress --no-ansi --no-interaction --optimize-autoloader
+
+
+# Process terminated with exit code 0
+# Result: OK

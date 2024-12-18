@@ -1,0 +1,3 @@
+<?php //Cgoit%255CCalendarExtendedBundle%255CController%255CModule%255CModuleTimeTable%2523compileDays
+
+return [PHP_INT_MAX, []];

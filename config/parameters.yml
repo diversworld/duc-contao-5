@@ -1,0 +1,5 @@
+# This file has been auto-generated during installation
+#
+bwein_backend_customizer:
+    env_title: 'DUC Darmstadt e. V.'
+    env_color: '9caf06'

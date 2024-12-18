@@ -1,0 +1,47 @@
+<?php
+
+// vendor/oveleon/contao-cookiebar/contao/languages/fr/tl_cookie_config.xlf
+$GLOBALS['TL_LANG']['tl_cookie_config']['title_legend'] = 'Configuration / Type';
+$GLOBALS['TL_LANG']['tl_cookie_config']['title']['0'] = 'Titre';
+$GLOBALS['TL_LANG']['tl_cookie_config']['title']['1'] = 'Saisissez ici le titre de la configuration';
+$GLOBALS['TL_LANG']['tl_cookie_config']['type']['0'] = 'Type de configuration';
+$GLOBALS['TL_LANG']['tl_cookie_config']['type']['1'] = 'Sélectionnez un type de configuration prédéfini.';
+$GLOBALS['TL_LANG']['tl_cookie_config']['sourceUrl']['0'] = 'URL Source';
+$GLOBALS['TL_LANG']['tl_cookie_config']['sourceUrl']['1'] = 'L\'URL source est utilisée pour intégrer des scripts qui doivent être explicitement intégrés dans la section HEAD du site pour fournir un service externe.';
+$GLOBALS['TL_LANG']['tl_cookie_config']['sourceLoadingMode']['0'] = 'Mode de chargement de l\'URL source';
+$GLOBALS['TL_LANG']['tl_cookie_config']['sourceLoadingMode']['1'] = 'Définissez ici quand l\'URL source doit être incorporée.';
+$GLOBALS['TL_LANG']['tl_cookie_config']['sourceUrlParameter']['0'] = 'Paramètre de l\'URL source';
+$GLOBALS['TL_LANG']['tl_cookie_config']['sourceUrlParameter']['1'] = 'Définir les paramètres de chargement de l\'URL source à utiliser.';
+$GLOBALS['TL_LANG']['tl_cookie_config']['scriptPosition']['0'] = 'Position du script';
+$GLOBALS['TL_LANG']['tl_cookie_config']['scriptPosition']['1'] = 'Vous pouvez sélectionner ici la position d\'intégration du script.';
+$GLOBALS['TL_LANG']['tl_cookie_config']['scriptLoadingMode']['0'] = 'Mode de chargement de la configuration';
+$GLOBALS['TL_LANG']['tl_cookie_config']['scriptLoadingMode']['1'] = 'Définissez ici quand le script / la configuration peut être intégré(e).';
+$GLOBALS['TL_LANG']['tl_cookie_config']['vendorId']['0'] = 'ID';
+$GLOBALS['TL_LANG']['tl_cookie_config']['vendorId']['1'] = 'Saisissez votre ID ici.';
+$GLOBALS['TL_LANG']['tl_cookie_config']['tagManager_vendorId']['0'] = 'ID';
+$GLOBALS['TL_LANG']['tl_cookie_config']['tagManager_vendorId']['1'] = 'Saisissez votre Mess-ID, Container-ID or Google Analytics ID ici.';
+$GLOBALS['TL_LANG']['tl_cookie_config']['scriptConfig']['0'] = 'Configuration';
+$GLOBALS['TL_LANG']['tl_cookie_config']['scriptConfig']['1'] = 'Code JavaScript personnalisé.';
+$GLOBALS['TL_LANG']['tl_cookie_config']['scriptConfig_xlabel'] = 'Insérer une configuration avancée';
+$GLOBALS['TL_LANG']['tl_cookie_config']['tagManager']['0'] = 'Google Tag Manager';
+$GLOBALS['TL_LANG']['tl_cookie_config']['tagManager']['1'] = 'Integrer Google Tag Manager / Mode Consentement Google';
+$GLOBALS['TL_LANG']['tl_cookie_config']['googleConsentMode']['0'] = 'Google Consent Mode';
+$GLOBALS['TL_LANG']['tl_cookie_config']['googleConsentMode']['1'] = 'Fournit une configuration prédéfinie pour le mode Consentement de Google. Cette configuration est écrasée si un script personnalisé a été défini dans le champ "Configuration".';
+$GLOBALS['TL_LANG']['tl_cookie_config']['script']['0'] = 'Personnalisé';
+$GLOBALS['TL_LANG']['tl_cookie_config']['script']['1'] = 'Configurer le script personnalisé.';
+$GLOBALS['TL_LANG']['tl_cookie_config']['bodyBelowContent'] = 'Après le contenu de la balise body';
+$GLOBALS['TL_LANG']['tl_cookie_config']['bodyAboveContent'] = 'Avant le contenu de la balise body';
+$GLOBALS['TL_LANG']['tl_cookie_config']['head'] = 'Balise Head';
+$GLOBALS['TL_LANG']['tl_cookie_config']['confirmed'] = 'Charger uniquement si l\'un des cookies a été accepté';
+$GLOBALS['TL_LANG']['tl_cookie_config']['unconfirmed'] = 'Charger seulement si aucun des cookies n\'a été accepté';
+$GLOBALS['TL_LANG']['tl_cookie_config']['always'] = 'Toujours charger';
+$GLOBALS['TL_LANG']['tl_cookie_config']['new']['0'] = 'Nouveau';
+$GLOBALS['TL_LANG']['tl_cookie_config']['new']['1'] = 'Créer une nouvelle configuration';
+$GLOBALS['TL_LANG']['tl_cookie_config']['show']['0'] = 'Afficher les détails';
+$GLOBALS['TL_LANG']['tl_cookie_config']['show']['1'] = 'Afficher les détails du cookie ID %s';
+$GLOBALS['TL_LANG']['tl_cookie_config']['edit']['0'] = 'Modifier la configuration';
+$GLOBALS['TL_LANG']['tl_cookie_config']['edit']['1'] = 'Modifier la configuration ID %s';
+$GLOBALS['TL_LANG']['tl_cookie_config']['copy']['0'] = 'Dupliquer la configuration';
+$GLOBALS['TL_LANG']['tl_cookie_config']['copy']['1'] = 'Dupliquer la configuration ID %s';
+$GLOBALS['TL_LANG']['tl_cookie_config']['delete']['0'] = 'Supprimer le cookie';
+$GLOBALS['TL_LANG']['tl_cookie_config']['delete']['1'] = 'Supprimer le cookie ID %s';

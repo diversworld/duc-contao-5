@@ -1,0 +1,30 @@
+$ /usr/local/bin/php -q -dmax_execution_time=0 -dmemory_limit=-1 -ddisplay_errors=0 -ddisplay_startup_errors=0 -derror_reporting=0 -dallow_url_fopen=1 -ddisable_functions= -ddate.timezone=CET /shared/httpd/duc-contao-5/public/contao-manager.phar.php composer require sineos/filemanager-bundle markocupic/contao-bundle-creator-bundle --no-update --no-scripts --prefer-stable --sort-packages --no-ansi --no-interaction
+
+
+# Process terminated with exit code 0
+# Result: OK
+
+
+> Resolving dependencies using Composer Cloud v3.8.1
+
+[8.3MiB/0.19s] Loading composer repositories with package information
+[79.1MiB/10.56s] Updating dependencies
+[27.7MiB/10.90s] Lock file operations: 3 installs, 0 updates, 0 removals
+[27.7MiB/10.90s]   - Locking markocupic/contao-bundle-creator-bundle (1.8.5)
+[27.7MiB/10.91s]   - Locking markocupic/zip-bundle (1.1.1)
+[27.7MiB/10.91s]   - Locking sineos/filemanager-bundle (2.0.5)
+[26.6MiB/10.93s] Writing lock file
+[15.5MiB/10.97s] <warning>Package php-http/message-factory is abandoned, you should avoid using it. Use psr/http-factory instead.</warning>
+[15.8MiB/11.58s] No security vulnerability advisories found.
+[16.5MiB/11.58s] Memory usage: 16.47MB (peak: 194.35MB), time: 11.59s.
+[16.5MiB/11.58s] Finished Composer Cloud resolving.
+
+
+# Job ID QKO6WTlkWxxCUqmd6QcF7cVjyyZ6B501YL0jS5CV4Eht5do1nok2PwVJjaps1byXlNJSxDjlYPx9Hak74LEyfLU1Rb1zOlxuYHSZigcSgjMrPy2oS4v05 completed in 17 seconds
+# Memory usage: 16.47MB (peak: 194.35MB), time: 11.59s.
+
+$ /usr/local/bin/php -q -dmax_execution_time=0 -dmemory_limit=-1 -ddisplay_errors=0 -ddisplay_startup_errors=0 -derror_reporting=0 -dallow_url_fopen=1 -ddisable_functions= -ddate.timezone=CET /shared/httpd/duc-contao-5/public/contao-manager.phar.php composer install --no-dev --no-progress --no-ansi --no-interaction --optimize-autoloader
+
+
+# Process terminated with exit code 0
+# Result: OK

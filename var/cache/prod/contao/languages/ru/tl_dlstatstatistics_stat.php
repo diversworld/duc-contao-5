@@ -1,0 +1,40 @@
+<?php
+
+// vendor/bugbuster/contao-dlstats-bundle/src/Resources/contao/languages/ru/tl_dlstatstatistics_stat.xlf
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['aliasnotfound'] = 'Алиас не найден';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['browserlang'] = 'Язык браузера';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['clientside'] = 'На стороне клиента';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['downloads'] = 'Загрузок';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['downloads_top20'] = 'ТОП %s загрузок';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['filename'] = 'Имя файла';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['filetype'] = 'Тип файла';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['hostalias'] = 'Хост / Алиас страницы';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['ip'] = 'IP-адрес / Домен';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['last_20_downloads'] = 'Последние %s загрузки';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['last_30_calendar_days'] = 'Загрузок в день за последние %s дня(ей)';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['last_download'] = 'Последняя загрузка';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['modname'] = 'Модуль статистики загрузок';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['name'] = 'Статистика загрузок';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['no_data'] = 'Нет статистики данных.';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['period'] = 'Период';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['reset'] = 'Сброс';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['serverside'] = 'На стороне сервера';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['showRecord'] = 'Показать подробные сведения о записи';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['startdate'] = 'Подробное журналирование с';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['status_activated'] = 'включено';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['status_counting'] = 'Подсчет загрузок';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['status_deactivated'] = 'отключено';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['status_detailed'] = 'Подробное журналирование';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['total_dl'] = 'Загрузок всего';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['total_dl_month'] = 'Количество загрузок за последние 4 месяца';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['tstamp'] = 'Дата / время';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['username'] = 'Пользователь / Язык';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['wrong_parameter'] = 'Поврежден или неправильный параметр';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['zero'] = 'Статистика загрузок будет обнулена.';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['zero_confirm'] = 'Вы хотите сбросить статистику загрузок?';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['zero_confirm_single'] = 'Вы хотите сбросить эту статистику?';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['zero_single'] = 'Удалить эту статистику.';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['no_selection'] = 'нет выбора.';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['without_login'] = 'без логина';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['detail_filter'] = 'Подробная статистика с фильтром';
+$GLOBALS['TL_LANG']['tl_dlstatstatistics_stat']['reset_not_allowed'] = 'Сброс статистики для этого счетчика не допускается.';

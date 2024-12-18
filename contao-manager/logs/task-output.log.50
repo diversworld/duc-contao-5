@@ -1,0 +1,26 @@
+$ /usr/local/bin/php -q -dmax_execution_time=0 -dmemory_limit=-1 -ddisplay_errors=0 -ddisplay_startup_errors=0 -derror_reporting=0 -dallow_url_fopen=1 -ddisable_functions= -ddate.timezone=CET /shared/httpd/duc-contao-5/public/contao-manager.phar.php composer require bugbuster/contao-visitors-bundle=^1.15 bugbuster/contao-dlstats-statistic-export-bundle=^1.3 --no-update --no-scripts --prefer-stable --sort-packages --no-ansi --no-interaction
+
+
+# Process terminated with exit code 0
+# Result: OK
+
+
+> Resolving dependencies using Composer Cloud v3.7.1
+
+[8.5MiB/0.21s] Loading composer repositories with package information
+[85.6MiB/10.32s] Updating dependencies
+[103.6MiB/10.65s] Your requirements could not be resolved to an installable set of packages.
+[103.6MiB/10.65s] 
+  Problem 1
+    - Root composer.json requires bugbuster/contao-dlstats-statistic-export-bundle ^1.3 -> satisfiable by bugbuster/contao-dlstats-statistic-export-bundle[1.3.0].
+    - bugbuster/contao-dlstats-statistic-export-bundle 1.3.0 requires php >=8.3.0,<8.4.0 -> your php version (8.2.1.0) does not satisfy that requirement.
+  Problem 2
+    - Root composer.json requires bugbuster/contao-visitors-bundle ^1.15 -> satisfiable by bugbuster/contao-visitors-bundle[1.15.0, 1.15.1, 1.15.2].
+    - bugbuster/contao-visitors-bundle[1.15.0, ..., 1.15.2] require php >=8.3.0,<8.4.0 -> your php version (8.2.1.0) does not satisfy that requirement.
+
+[103.6MiB/10.65s] <warning>Running update with --no-dev does not mean require-dev is ignored, it just means the packages will not be installed. If dev requirements are blocking the update you have to resolve those problems.</warning>
+[55.2MiB/10.68s] Memory usage: 55.18MB (peak: 221.27MB), time: 10.69s.
+[55.2MiB/10.68s] Finished Composer Cloud resolving.
+
+
+# Cloud Job ID PAZWSbgs1uTmXvYMJK2pqB8tRLe08ppdEck0V7Ra6fiEqdNuyRKFtu0FqKaRjAeypKlf3dBP8LN failed

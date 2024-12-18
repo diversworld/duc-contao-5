@@ -1,0 +1,3 @@
+<?php //Contao%255CModule%2523compileNavigationRow
+
+return [PHP_INT_MAX, []];

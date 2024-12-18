@@ -1,0 +1,10 @@
+{
+    "users": {
+        "duc": {
+            "username": "duc",
+            "password": "$2y$13$MZhBymrvIO.QKxREWBE3SejfDxanf5qXh7hmWvD42yeop7xGG6UCm"
+        }
+    },
+    "version": 2,
+    "secret": "df57adffbc184c221cdcf57bfc944cd2bdc66819a11cfb58e669e9ff61d08f384970c880c78f1421"
+}

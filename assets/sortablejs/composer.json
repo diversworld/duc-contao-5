@@ -1,0 +1,15 @@
+{
+  "name": "heimrichhannot-contao-components/sortablejs",
+  "type": "contao-component",
+  "description": "sortablejs integration for Contao Open Source CMS",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Heimrich & Hannot",
+      "homepage": "http://www.heimrich-hannot.de"
+    }
+  ],
+  "require": {
+    "contao-components/installer": "^1.0.9"
+  }
+}

@@ -1,0 +1,12 @@
+# This file has been auto-generated during installation
+parameters:
+    database_host: localhost
+    database_port: 3306
+    database_user: duc2022
+    database_password: 07Aak_q7
+    database_name: h148262_duc_2022
+    secret: 7542ab3d38fbfbd0c855046161db728fd44d97707cdfc1f33e5bc0b1baa7603d
+#
+bwein_backend_customizer:
+    env_title: 'DUC Darmstadt e. V.'
+    env_color: '797979'

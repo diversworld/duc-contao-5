@@ -1,0 +1,19 @@
+> Resolving dependencies using Composer Cloud v3.7.1
+
+[8.5MiB/0.21s] Loading composer repositories with package information
+[104.5MiB/15.74s] Updating dependencies
+[87.2MiB/17.52s] Nothing to modify in lock file
+[18.1MiB/17.57s] <warning>Package php-http/message-factory is abandoned, you should avoid using it. Use psr/http-factory instead.</warning>
+[18.4MiB/17.93s] No security vulnerability advisories found.
+[19.1MiB/17.93s] Memory usage: 19.06MB (peak: 255.98MB), time: 17.94s.
+[19.1MiB/17.94s] Finished Composer Cloud resolving.
+
+
+# Job ID 3wVraSVbcBPW4l9VXfNKtTXxHcV5rz5MOOG0qb26Cf3HFHANZTrDH78WykMwkobSh0iJBf completed in 16 seconds
+# Memory usage: 19.06MB (peak: 255.98MB), time: 17.94s.
+
+$ /usr/local/bin/php -q -dmax_execution_time=0 -dmemory_limit=-1 -ddisplay_errors=0 -ddisplay_startup_errors=0 -derror_reporting=0 -dallow_url_fopen=1 -ddisable_functions= -ddate.timezone=CET /shared/httpd/duc-contao-5/public/contao-manager.phar.php composer install --no-dev --no-progress --no-ansi --no-interaction --optimize-autoloader
+
+
+# Process terminated with exit code 0
+# Result: OK

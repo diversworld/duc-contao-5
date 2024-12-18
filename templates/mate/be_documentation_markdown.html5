@@ -1,0 +1,29 @@
+# Dokumentation
+####Befüllen der Doku-Startseite
+**Klaus:**Der Text für diese Wiki-Startseite wird in eine Template-Datei mit dem Namen be_documentation_markdown.html eingetragen. Das Template findest Du im Bereich Layout->Templates.
+
+###--------------------------------------------------------------------------------------------------------------------------------------------
+##Wichtige Info!
+Bitte keinen text aus Word oder einem anderen Programm in das Feld für den Teaser kopierem. Bitte den text viorher in einen einfachen </br>
+Texteditor kopieren und von dort in das Teaserfeld.</br>
+Kopiert man direkt aus z.B. Word, werden Formatierungen übernomen, die die Darstellung in der Website beeinflussen.</br>
+</br>
+Mit dem Menüpunkt "Format" -> "Formatierung entfernen" die überflüssige Formatierung entfernt werden. Das funktioniert aber nict mit allen</br>
+Elementen.</br>
+Daher ist es besser einen "sauberen" Text zu kopieren als einen "vermüllten" text aus Word.
+###--------------------------------------------------------------------------------------------------------------------------------------------
+
+##Wiki
+
+###News-Beitrag/Event anlegen
+Der Teaser sollte möglichst kurz gehalten werden und Lust aufs weiterlesen machen. Längeren Text schreibt man dann unter die Rubrik, die man mit dem Stiftsymbol erreicht.
+
+###Einfaches Bedienen mit Tastaturkürzeln
+Um dir Arbeit mit Contao zu beschleunigen, gibt es im Backend etliche Tastaturkürzel, mit denen sich bestimmte Befehle direkt aufrufen lassen. Zum Beispiel kannst</br>
+Du die Schaltfläche "Speichern" am Ende eines Eingabeformulars alternativ zur Bedienung mit der Maus auch mit dem Tastaturkürzel [Alt]+[s] ansteuern. </br>
+Eine Liste aller Tastaturkürzel findes Du <a href="https://docs.contao.org/books/manual/current/de/02-administrationsbereich/backend-tastaturkuerzel.html">in dieser verlinkten Übersicht</a>
+
+###—
+
+###Backup der Websitedaten
+Konfiguriert ist ein automatisches Backup der Datenbank und des Templates täglich um 23 Uhr, wöchentlich jeden Samstag und monatlich jeden ersten Tag im Monat. Es werden insgesamt 10 Backup-Versionen gespeichert.

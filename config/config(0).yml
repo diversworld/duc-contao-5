@@ -1,0 +1,19 @@
+# config/config.yml
+bwein_backend_customizer:
+  header_title: 'DUC Darmstadt e. V.'
+  header_color: '#001656'
+#
+contao:
+  localconfig:
+    pdfformsLicence: 1SORN-ZKEKO-9DRTP-L9E0C
+#
+#framework:
+#  mailer:
+#    transports:
+#      application: 'smtps://webmaster@duc-darmstadt.de:DUC+DA-1955!@duc-darmstadt.de'
+#      website1: 'smtps://webmaster@duc-darmstadt.de:news@duc-darmstadt.de'
+#contao:
+#  mailer:
+#    transports:
+#      application:
+#        website1:

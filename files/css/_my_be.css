@@ -1,0 +1,5 @@
+.w25 {
+    width: calc(25% - 30px);
+    float: left;
+    min-height: 80px;
+}

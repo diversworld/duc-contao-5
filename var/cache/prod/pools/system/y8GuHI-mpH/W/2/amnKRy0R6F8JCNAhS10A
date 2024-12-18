@@ -1,0 +1,3 @@
+<?php //Diversworld%255CContaoCheckBundle%255CController%255CFrontendModule%255CCheckListingController
+
+return [PHP_INT_MAX, []];

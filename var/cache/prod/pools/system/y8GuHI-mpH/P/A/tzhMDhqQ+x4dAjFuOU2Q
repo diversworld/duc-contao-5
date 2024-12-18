@@ -1,0 +1,3 @@
+<?php //Contao%255CSystem%2523getFormattedNumber
+
+return [PHP_INT_MAX, []];

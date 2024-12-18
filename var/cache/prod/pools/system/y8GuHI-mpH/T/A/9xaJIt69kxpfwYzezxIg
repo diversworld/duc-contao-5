@@ -1,0 +1,49 @@
+<?php //BugBuster%255CVisitorsBundle%255CController%255CVisitorsFeController%2523sccoAction
+
+return [PHP_INT_MAX, static fn () => \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Attribute\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Attribute\\Route')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Attribute\\Route' => [
+            'path' => [
+                '/scco',
+            ],
+            'methods' => [
+                [],
+            ],
+            'schemes' => [
+                [],
+            ],
+            'name' => [
+                'visitors_frontend_screencount',
+            ],
+            'requirements' => [
+                [],
+            ],
+            'options' => [
+                [],
+            ],
+            'defaults' => [
+                [],
+            ],
+            'host' => [
+                null,
+            ],
+            'condition' => [
+                null,
+            ],
+            'priority' => [
+                null,
+            ],
+            'env' => [
+                null,
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+)];

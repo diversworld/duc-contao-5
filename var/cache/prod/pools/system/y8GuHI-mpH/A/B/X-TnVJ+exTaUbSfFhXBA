@@ -1,0 +1,3 @@
+<?php //Contao%255CModule%2523__isset
+
+return [PHP_INT_MAX, []];

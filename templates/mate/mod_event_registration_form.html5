@@ -1,0 +1,14 @@
+<?php $this->extend('block_unsearchable'); ?>
+
+<?php $this->block('content'); ?>
+
+  <?php if (!$this->canRegister): ?>
+    <p class="cannot-register"><?= $this->trans('cannot_register', [], 'im_contao_event_registration') ?></p>
+  <?php else: ?>
+    <?php if ($this->isWaitingList): ?>
+      <p class="waiting-list"><?= $this->trans('is_waiting_list', [], 'im_contao_event_registration') ?></p>
+    <?php endif; ?>
+    <?= $this->registrationForm ?>
+  <?php endif; ?>
+
+<?php $this->endblock(); ?>

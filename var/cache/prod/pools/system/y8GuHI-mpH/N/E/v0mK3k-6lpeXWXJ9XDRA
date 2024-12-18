@@ -1,0 +1,3 @@
+<?php //BugBuster%255CDlstatsExportBundle%255CController%255CExportController%2523onGenerateExportData
+
+return [PHP_INT_MAX, []];

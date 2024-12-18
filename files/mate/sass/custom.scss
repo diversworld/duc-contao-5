@@ -1,0 +1,103 @@
+/*
+ * uncomment to add spacing helpers to set margin and padding
+ * see mate theme documentation
+ */
+
+//@import 'spacing-helpers';
+/* roboto-v30-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(''),
+       url('roboto-v30-latin-300.woff2') format('woff2'),
+       url('roboto-v30-latin-300.woff') format('woff');
+}
+/* roboto-v30-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('roboto-v30-latin-regular.woff2') format('woff2'),
+       url('roboto-v30-latin-regular.woff') format('woff');
+}
+/* roboto-v30-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(''),
+       url('roboto-v30-latin-500.woff2') format('woff2'),
+       url('roboto-v30-latin-500.woff') format('woff');
+}
+/* roboto-v30-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('roboto-v30-latin-700.woff2') format('woff2'),
+       url('roboto-v30-latin-700.woff') format('woff');
+}
+
+
+/****
+ **** Individelle Styles und andere Elemente
+ ****
+ */
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Roboto";
+    position: relative;
+    //color: #96ABCC;
+}
+
+.brand-logo .content-image:not(.fixed-nav) img {
+    max-height: 110px;
+    width: 100%;
+    object-fit: contain;
+}
+
+#header .brand-logo .ce_image:not(.fixed-nav) img {
+	max-height: 110px !important;
+    width: 100%;
+    padding: 5px 0;
+    object-fit: contain;
+
+}
+/*
+#header .brand-logo .content-image:not(.fixed-nav) img {
+    display: block;
+    width: auto;
+}
+nav .brand-logo {
+    //position: relative;
+    line-height: 0;
+}
+
+nav figure img {
+    padding: 4px; 
+}
+nav .image_container {
+    margin: 1px 0 !important;
+}*/
+nav .image_container img {
+    padding: 1px; 
+}
+.headroom--unpinned {
+    transform: translateY(0%); 
+/*    position: fixed;
+    top: 0;
+    z-index: 14;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    background: rgba(0, 22, 86, 0.9);
+    height: 80px; */
+}
+wrapper .slider.mod_newslist .img {
+    width: 60%;
+}

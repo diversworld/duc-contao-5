@@ -1,0 +1,8 @@
+# config/config.yml
+bwein_backend_customizer:
+  header_title: 'DUC Darmstadt e. V.'
+  header_color: '#003399'
+#
+contao:
+  localconfig:
+    pdfformsLicence: 1SORN-ZKEKO-9DRTP-L9E0C
