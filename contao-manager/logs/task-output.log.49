@@ -1,11 +1,28 @@
-$ /usr/local/bin/php -q -dmax_execution_time=0 -dmemory_limit=-1 -ddisplay_errors=0 -ddisplay_startup_errors=0 -derror_reporting=0 -dallow_url_fopen=1 -ddisable_functions= -ddate.timezone=CET /shared/httpd/duc-contao-5/vendor/contao/manager-bundle/bin/contao-console cache:clear --env=prod --no-warmup
+$ /usr/local/bin/php -q -dmax_execution_time=0 -dmemory_limit=-1 -ddisplay_errors=0 -ddisplay_startup_errors=0 -derror_reporting=0 -dallow_url_fopen=1 -ddisable_functions= -ddate.timezone=CET /shared/httpd/duc-contao-5/public/contao-manager.phar.php composer remove alnv/catalog-manager --no-update --no-scripts --no-ansi --no-interaction
 
 
 # Process terminated with exit code 0
 # Result: OK
 
 
-$ /usr/local/bin/php -q -dmax_execution_time=0 -dmemory_limit=-1 -ddisplay_errors=0 -ddisplay_startup_errors=0 -derror_reporting=0 -dallow_url_fopen=1 -ddisable_functions= -ddate.timezone=CET /shared/httpd/duc-contao-5/vendor/contao/manager-bundle/bin/contao-console cache:warmup --env=prod
+> Resolving dependencies using Composer Cloud v3.7.1
+
+[8.5MiB/0.20s] Loading composer repositories with package information
+[9.2MiB/0.33s] Updating dependencies
+[9.5MiB/0.37s] Lock file operations: 0 installs, 0 updates, 2 removals
+[9.5MiB/0.37s]   - Removing alnv/catalog-manager (v2.0.3)
+[9.5MiB/0.37s]   - Removing alnv/contao-geocoding (3.0.1)
+[8.4MiB/0.38s] Writing lock file
+[12.6MiB/0.41s] <warning>Package php-http/message-factory is abandoned, you should avoid using it. Use psr/http-factory instead.</warning>
+[10.4MiB/1.46s] No security vulnerability advisories found.
+[11.1MiB/1.46s] Memory usage: 11.08MB (peak: 103.64MB), time: 1.47s.
+[11.1MiB/1.47s] Finished Composer Cloud resolving.
+
+
+# Job ID uXh8NNGkGlChdLmetGUPelTwGwsbSDk2POuBfy0Spon3GzkFz0Bvriw8S3sS5hJBM completed in 1732465562 seconds
+# Memory usage: 11.08MB (peak: 103.64MB), time: 1.47s.
+
+$ /usr/local/bin/php -q -dmax_execution_time=0 -dmemory_limit=-1 -ddisplay_errors=0 -ddisplay_startup_errors=0 -derror_reporting=0 -dallow_url_fopen=1 -ddisable_functions= -ddate.timezone=CET /shared/httpd/duc-contao-5/public/contao-manager.phar.php composer install --no-dev --no-progress --no-ansi --no-interaction --optimize-autoloader
 
 
 # Process terminated with exit code 0

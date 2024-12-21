@@ -355,44 +355,44 @@ return [PHP_INT_MAX, [
     'mod_comments' => [
         'vendor/contao/comments-bundle/contao/templates/modules/mod_comments.html5' => '@Contao_ContaoCommentsBundle/mod_comments.html5',
     ],
+    'cal_default_edit' => [
+        'vendor/diversworld/contao-calendar-editor-bundle/src/Resources/contao/templates/cal_default_edit.html5' => '@Contao_CalendarEditorBundle/cal_default_edit.html5',
+    ],
+    'eventEdit_ForceCaptcha' => [
+        'vendor/diversworld/contao-calendar-editor-bundle/src/Resources/contao/templates/eventEdit_ForceCaptcha.html5' => '@Contao_CalendarEditorBundle/eventEdit_ForceCaptcha.html5',
+    ],
+    'eventEdit_default' => [
+        'vendor/diversworld/contao-calendar-editor-bundle/src/Resources/contao/templates/eventEdit_default.html5' => '@Contao_CalendarEditorBundle/eventEdit_default.html5',
+    ],
+    'eventEdit_delete' => [
+        'vendor/diversworld/contao-calendar-editor-bundle/src/Resources/contao/templates/eventEdit_delete.html5' => '@Contao_CalendarEditorBundle/eventEdit_delete.html5',
+    ],
+    'eventEdit_duplicate' => [
+        'vendor/diversworld/contao-calendar-editor-bundle/src/Resources/contao/templates/eventEdit_duplicate.html5' => '@Contao_CalendarEditorBundle/eventEdit_duplicate.html5',
+    ],
+    'event_list_edit' => [
+        'vendor/diversworld/contao-calendar-editor-bundle/src/Resources/contao/templates/event_list_edit.html5' => '@Contao_CalendarEditorBundle/event_list_edit.html5',
+    ],
+    'event_list_hidden' => [
+        'vendor/diversworld/contao-calendar-editor-bundle/src/Resources/contao/templates/event_list_hidden.html5' => '@Contao_CalendarEditorBundle/event_list_hidden.html5',
+    ],
+    'event_teaser_edit' => [
+        'vendor/diversworld/contao-calendar-editor-bundle/src/Resources/contao/templates/event_teaser_edit.html5' => '@Contao_CalendarEditorBundle/event_teaser_edit.html5',
+    ],
+    'event_upcoming_edit' => [
+        'vendor/diversworld/contao-calendar-editor-bundle/src/Resources/contao/templates/event_upcoming_edit.html5' => '@Contao_CalendarEditorBundle/event_upcoming_edit.html5',
+    ],
+    'form_captcha_calendar-editor' => [
+        'vendor/diversworld/contao-calendar-editor-bundle/src/Resources/contao/templates/form_captcha_calendar-editor.html5' => '@Contao_CalendarEditorBundle/form_captcha_calendar-editor.html5',
+    ],
+    'mod_event_ReaderEditLink' => [
+        'vendor/diversworld/contao-calendar-editor-bundle/src/Resources/contao/templates/mod_event_ReaderEditLink.html5' => '@Contao_CalendarEditorBundle/mod_event_ReaderEditLink.html5',
+    ],
     'mod_mae_event_filter' => [
         'vendor/marebe1602/mae_event_categories/contao/templates/modules/mod_mae_event_filter.html5' => '@Contao_PdirMaeEventCategoriesBundle/mod_mae_event_filter.html5',
     ],
     'be_cfg_tags_widget' => [
         'vendor/codefog/tags-bundle/src/Resources/contao/templates/be_cfg_tags_widget.html5' => '@Contao_CodefogTagsBundle/be_cfg_tags_widget.html5',
-    ],
-    'cal_default_edit' => [
-        'vendor/danielgausi/contao-calendareditor-bundle/src/Resources/contao/templates/cal_default_edit.html5' => '@Contao_CalendarEditorBundle/cal_default_edit.html5',
-    ],
-    'eventEdit_ForceCaptcha' => [
-        'vendor/danielgausi/contao-calendareditor-bundle/src/Resources/contao/templates/eventEdit_ForceCaptcha.html5' => '@Contao_CalendarEditorBundle/eventEdit_ForceCaptcha.html5',
-    ],
-    'eventEdit_default' => [
-        'vendor/danielgausi/contao-calendareditor-bundle/src/Resources/contao/templates/eventEdit_default.html5' => '@Contao_CalendarEditorBundle/eventEdit_default.html5',
-    ],
-    'eventEdit_delete' => [
-        'vendor/danielgausi/contao-calendareditor-bundle/src/Resources/contao/templates/eventEdit_delete.html5' => '@Contao_CalendarEditorBundle/eventEdit_delete.html5',
-    ],
-    'eventEdit_duplicate' => [
-        'vendor/danielgausi/contao-calendareditor-bundle/src/Resources/contao/templates/eventEdit_duplicate.html5' => '@Contao_CalendarEditorBundle/eventEdit_duplicate.html5',
-    ],
-    'event_list_edit' => [
-        'vendor/danielgausi/contao-calendareditor-bundle/src/Resources/contao/templates/event_list_edit.html5' => '@Contao_CalendarEditorBundle/event_list_edit.html5',
-    ],
-    'event_list_hidden' => [
-        'vendor/danielgausi/contao-calendareditor-bundle/src/Resources/contao/templates/event_list_hidden.html5' => '@Contao_CalendarEditorBundle/event_list_hidden.html5',
-    ],
-    'event_teaser_edit' => [
-        'vendor/danielgausi/contao-calendareditor-bundle/src/Resources/contao/templates/event_teaser_edit.html5' => '@Contao_CalendarEditorBundle/event_teaser_edit.html5',
-    ],
-    'event_upcoming_edit' => [
-        'vendor/danielgausi/contao-calendareditor-bundle/src/Resources/contao/templates/event_upcoming_edit.html5' => '@Contao_CalendarEditorBundle/event_upcoming_edit.html5',
-    ],
-    'form_captcha_calendar-editor' => [
-        'vendor/danielgausi/contao-calendareditor-bundle/src/Resources/contao/templates/form_captcha_calendar-editor.html5' => '@Contao_CalendarEditorBundle/form_captcha_calendar-editor.html5',
-    ],
-    'mod_event_ReaderEditLink' => [
-        'vendor/danielgausi/contao-calendareditor-bundle/src/Resources/contao/templates/mod_event_ReaderEditLink.html5' => '@Contao_CalendarEditorBundle/mod_event_ReaderEditLink.html5',
     ],
     'mod_event_registration_cancel' => [
         'vendor/inspiredminds/contao-event-registration/contao/templates/mod_event_registration_cancel.html5' => '@Contao_ContaoEventRegistrationBundle/mod_event_registration_cancel.html5',

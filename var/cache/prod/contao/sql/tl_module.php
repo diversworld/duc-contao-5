@@ -554,6 +554,14 @@ $this->arrFields = array (
     'length' => 1,
     'default' => '',
   ),
+  'event_categories' => 'blob NULL',
+  'mae_event_list' => 'int(10) unsigned NOT NULL default \'0\'',
+  'mae_event_catname' => 'varchar(50) NOT NULL default \'\'',
+  'mae_only_future_cat' => 
+  array (
+    'type' => 'boolean',
+    'default' => false,
+  ),
   'caledit_allowPublish' => 'char(1) NOT NULL default \'\'',
   'caledit_allowDelete' => 'char(1) NOT NULL default \'\'',
   'caledit_allowClone' => 'char(1) NOT NULL default \'\'',
@@ -576,14 +584,6 @@ $this->arrFields = array (
   'caledit_dateIncludeCSSTheme' => 'varchar(64) NOT NULL default \'smoothness\'',
   'caledit_dateImage' => 'char(1) NOT NULL default \'1\'',
   'caledit_dateImageSRC' => 'binary(16) NULL',
-  'event_categories' => 'blob NULL',
-  'mae_event_list' => 'int(10) unsigned NOT NULL default \'0\'',
-  'mae_event_catname' => 'varchar(50) NOT NULL default \'\'',
-  'mae_only_future_cat' => 
-  array (
-    'type' => 'boolean',
-    'default' => false,
-  ),
   'com_order' => 'varchar(16) COLLATE ascii_bin NOT NULL default \'ascending\'',
   'com_moderate' => 
   array (

@@ -63,6 +63,8 @@ $GLOBALS['TL_LANG']['tl_calendar']['reg_legend'] = 'Registrierung';
 $GLOBALS['TL_LANG']['tl_calendar']['reg_confirm_page'] = ['Weiterleitungsseite für Bestätigungen', 'Die Zielseite wo das Modul zur Verarbeitung von Bestätigungen für Registrierungen eingebunden ist. Andernfalls wird die Weiterleitungsseite des Kalenders benutzt.'];
 $GLOBALS['TL_LANG']['tl_calendar']['reg_cancel_page'] = ['Weiterleitungsseite für Stornierungen', 'Die Zielseite wo das Modul zur Verarbeitung von Stornierungen für Registrierungen eingebunden ist. Andernfalls wird die Weiterleitungsseite des Kalenders benutzt.'];
 
+$GLOBALS['TL_LANG']['tl_calendar']['categories_label'] = array('Kategorien', 'Kategorien bearbeiten');
+
 $GLOBALS['TL_LANG']['tl_calendar']['AllowEdit'] = array('Bearbeitung im Frontend erlauben', 'Erlaubt Frontend-Usern das Hinzufügen und Bearbeiten von Terminen in diesem Kalender.');
 $GLOBALS['TL_LANG']['tl_calendar']['caledit_onlyFuture'] = array('Nur zukünftige Events', 'Wenn aktiviert, ist die Bearbeitung nur für zukünftige Termine möglich.');
 $GLOBALS['TL_LANG']['tl_calendar']['caledit_jumpTo'] = array('Weiterleitungsseite zum Bearbeiten', 'Bitte wählen Sie eine Seite mit dem Event-Editor, auf den der User bei einem Klick auf einen Bearbeiten-Link weitergeleitet wird.');
@@ -71,8 +73,6 @@ $GLOBALS['TL_LANG']['tl_calendar']['caledit_onlyUser'] = array('Bearbeiten nur f
 $GLOBALS['TL_LANG']['tl_calendar']['caledit_groups'] = array('Erlaubte Mitgliedergruppen zum Bearbeiten', 'Wählen Sie die Gruppen aus, die Termine hinzufügen und bearbeiten dürfen.');
 $GLOBALS['TL_LANG']['tl_calendar']['caledit_adminGroup'] = array('Frontend-Administratoren zum Bearbeiten', 'Frontend-Administratoren dürfen alle Termine bearbeiten, auch wenn nur-für-den-Besitzer aktiviert ist.');
 $GLOBALS['TL_LANG']['tl_calendar']['edit_legend'] = 'Bearbeitung im Frontend';
-
-$GLOBALS['TL_LANG']['tl_calendar']['categories_label'] = array('Kategorien', 'Kategorien bearbeiten');
 
 // vendor/contao/comments-bundle/contao/languages/de/tl_calendar.xlf
 $GLOBALS['TL_LANG']['tl_calendar']['allowComments']['0'] = 'Kommentare aktivieren';

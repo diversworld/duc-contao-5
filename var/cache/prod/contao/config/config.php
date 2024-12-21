@@ -624,15 +624,6 @@ $GLOBALS['BE_MOD']['content']['calendar']['tables'][] = 'tl_event_registration';
 }
 
 namespace {
-$GLOBALS['FE_MOD']['events']['calendarEdit'] = \DanielGausi\CalendarEditorBundle\Modules\ModuleCalendarEdit::class;
-$GLOBALS['FE_MOD']['events']['EventEditor'] = \DanielGausi\CalendarEditorBundle\Modules\ModuleEventEditor::class;
-$GLOBALS['FE_MOD']['events']['EventReaderEditLink'] = \DanielGausi\CalendarEditorBundle\Modules\ModuleEventReaderEdit::class;
-$GLOBALS['FE_MOD']['events']['EventHiddenList'] = \DanielGausi\CalendarEditorBundle\Modules\ModuleHiddenEventlist::class;
-$GLOBALS['FE_MOD']['calendar']['calendar_editor'] = \DanielGausi\CalendarEditorBundle\Modules\CalendarEditorModule::class;
-//$GLOBALS['TL_HOOKS']['getAllEvents'][] = [ListAllEventsHook::class, 'updateAllEvents'];
-}
-
-namespace {
 /*
  * This file is part of a BugBuster Contao Bundle.
  *
@@ -703,6 +694,15 @@ $GLOBALS['FE_MOD']['events']['mae_event_filter'] = \Pdir\MaeEventCategoriesBundl
  * Models
  */
 $GLOBALS['TL_MODELS']['tl_mae_event_cat'] = \Pdir\MaeEventCategoriesBundle\Model\MaeEventCatModel::class;
+}
+
+namespace {
+$GLOBALS['FE_MOD']['events']['calendarEdit'] = \Diversworld\CalendarEditorBundle\Modules\ModuleCalenderEdit::class;
+$GLOBALS['FE_MOD']['events']['EventEditor'] = \Diversworld\CalendarEditorBundle\Modules\ModuleEventEditor::class;
+$GLOBALS['FE_MOD']['events']['EventReaderEditLink'] = \Diversworld\CalendarEditorBundle\Modules\ModuleEventReaderEdit::class;
+$GLOBALS['FE_MOD']['events']['EventHiddenList'] = \Diversworld\CalendarEditorBundle\Modules\ModuleHiddenEventlist::class;
+//$GLOBALS['TL_HOOKS']['getAllEvents'][] = [ListAllEventsHook::class, 'updateAllEvents'];
+$GLOBALS['TL_HOOKS']['listAllEvents'][] = ['Diversworld\\CalendarEditorBundle\\Hooks\\ListAllEventsHook', 'onListAllEvents'];
 }
 
 namespace {

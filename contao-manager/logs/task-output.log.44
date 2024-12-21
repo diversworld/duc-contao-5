@@ -1,30 +1,19 @@
-$ /usr/local/bin/php -q -dmax_execution_time=0 -dmemory_limit=-1 -ddisplay_errors=0 -ddisplay_startup_errors=0 -derror_reporting=0 -dallow_url_fopen=1 -ddisable_functions= -ddate.timezone=CET /shared/httpd/duc-contao-5/public/contao-manager.phar.php composer require contao/maker-bundle sineos/filemanager-bundle markocupic/contao-bundle-creator-bundle --no-update --no-scripts --prefer-stable --sort-packages --no-ansi --no-interaction
-
-
-# Process terminated with exit code 0
-# Result: OK
-
-
 > Resolving dependencies using Composer Cloud v3.8.1
 
-[8.3MiB/0.18s] Loading composer repositories with package information
-[79.7MiB/10.56s] Updating dependencies
-[93.2MiB/10.84s] Your requirements could not be resolved to an installable set of packages.
-[93.2MiB/10.85s] 
+[8.4MiB/0.20s] Loading composer repositories with package information
+[83.4MiB/12.14s] Updating dependencies
+[96.9MiB/12.62s] Your requirements could not be resolved to an installable set of packages.
+[96.9MiB/12.62s] 
   Problem 1
-    - Root composer.json requires contao/maker-bundle ^5.4 -> satisfiable by contao/maker-bundle[5.4.0, ..., 5.4.7].
-    - contao/maker-bundle 5.4.0 requires contao/core-bundle 5.4.0 -> found contao/core-bundle[5.4.0] but these were not loaded, likely because it conflicts with another require.
-    - contao/maker-bundle 5.4.1 requires contao/core-bundle 5.4.1 -> found contao/core-bundle[5.4.1] but these were not loaded, likely because it conflicts with another require.
-    - contao/maker-bundle 5.4.2 requires contao/core-bundle 5.4.2 -> found contao/core-bundle[5.4.2] but these were not loaded, likely because it conflicts with another require.
-    - contao/maker-bundle 5.4.3 requires contao/core-bundle 5.4.3 -> found contao/core-bundle[5.4.3] but these were not loaded, likely because it conflicts with another require.
-    - contao/maker-bundle 5.4.4 requires contao/core-bundle 5.4.4 -> found contao/core-bundle[5.4.4] but these were not loaded, likely because it conflicts with another require.
-    - contao/maker-bundle 5.4.5 requires contao/core-bundle 5.4.5 -> found contao/core-bundle[5.4.5] but these were not loaded, likely because it conflicts with another require.
-    - contao/maker-bundle 5.4.6 requires contao/core-bundle 5.4.6 -> found contao/core-bundle[5.4.6] but these were not loaded, likely because it conflicts with another require.
-    - contao/maker-bundle 5.4.7 requires contao/core-bundle 5.4.7 -> found contao/core-bundle[5.4.7] but these were not loaded, likely because it conflicts with another require.
+    - Root composer.json requires diversworld/contao-ducapp-bundle dev-main, found diversworld/contao-ducapp-bundle[1.0] but it does not match the constraint.
+  Problem 2
+    - Root composer.json requires danielgausi/contao-calendareditor-bundle dev-main -> satisfiable by danielgausi/contao-calendareditor-bundle[dev-main].
+    - danielgausi/contao-calendareditor-bundle dev-main requires hofff/contao-calendarfield ^4.0 -> satisfiable by hofff/contao-calendarfield[4.0.0, 4.0.1].
+    - hofff/contao-calendarfield[4.0.0, ..., 4.0.1] require contao/core-bundle ~4.9 -> found contao/core-bundle[4.9.0, ..., 4.13.50] but these were not loaded, likely because it conflicts with another require.
 
-[93.2MiB/10.85s] <warning>Running update with --no-dev does not mean require-dev is ignored, it just means the packages will not be installed. If dev requirements are blocking the update you have to resolve those problems.</warning>
-[54.4MiB/10.87s] Memory usage: 54.37MB (peak: 196.21MB), time: 10.88s.
-[54.4MiB/10.87s] Finished Composer Cloud resolving.
+[96.9MiB/12.62s] <warning>Running update with --no-dev does not mean require-dev is ignored, it just means the packages will not be installed. If dev requirements are blocking the update you have to resolve those problems.</warning>
+[56.3MiB/12.65s] Memory usage: 56.27MB (peak: 208.63MB), time: 12.68s.
+[56.3MiB/12.65s] Finished Composer Cloud resolving.
 
 
-# Cloud Job ID DdFAJIpALJ3FF7tvCgwQ4xxz300HYomEQxPuaiQSLpvmdykufVsJb3QmELqQryP7MJ0mjDjAqw76IbzbMqGObFqsjVPsWG5kSGBq2Ngnp3APTsYlaanLNdxiXKN failed
+# Cloud Job ID vyedsQHRJIF9VyQFwigmnj9jDem84A0amB4irmmcYIGeVtWyyIVnSeZ5Md78zSAcTkaHc0n failed

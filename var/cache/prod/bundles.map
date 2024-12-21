@@ -982,20 +982,6 @@
      'loadInProduction' => true,
      'loadInDevelopment' => true,
   )),
-  'DanielGausi\\CalendarEditorBundle\\CalendarEditorBundle' => 
-  \Contao\ManagerPlugin\Bundle\Config\BundleConfig::__set_state(array(
-     'name' => 'DanielGausi\\CalendarEditorBundle\\CalendarEditorBundle',
-     'replace' => 
-    array (
-    ),
-     'loadAfter' => 
-    array (
-      0 => 'Contao\\CalendarBundle\\ContaoCalendarBundle',
-      1 => 'Contao\\CoreBundle\\ContaoCoreBundle',
-    ),
-     'loadInProduction' => true,
-     'loadInDevelopment' => true,
-  )),
   'BugBuster\\DlstatsExportBundle\\BugBusterContaoDlstatsExportBundle' => 
   \Contao\ManagerPlugin\Bundle\Config\BundleConfig::__set_state(array(
      'name' => 'BugBuster\\DlstatsExportBundle\\BugBusterContaoDlstatsExportBundle',
@@ -1053,6 +1039,21 @@
     array (
       0 => 'Contao\\CalendarBundle\\ContaoCalendarBundle',
       1 => 'Contao\\CoreBundle\\ContaoCoreBundle',
+    ),
+     'loadInProduction' => true,
+     'loadInDevelopment' => true,
+  )),
+  'Diversworld\\CalendarEditorBundle\\CalendarEditorBundle' => 
+  \Contao\ManagerPlugin\Bundle\Config\BundleConfig::__set_state(array(
+     'name' => 'Diversworld\\CalendarEditorBundle\\CalendarEditorBundle',
+     'replace' => 
+    array (
+    ),
+     'loadAfter' => 
+    array (
+      0 => 'Contao\\CalendarBundle\\ContaoCalendarBundle',
+      1 => 'Contao\\CoreBundle\\ContaoCoreBundle',
+      2 => 'MenAtWork\\MultiColumnWizard',
     ),
      'loadInProduction' => true,
      'loadInDevelopment' => true,

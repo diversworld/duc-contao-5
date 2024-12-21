@@ -1,15 +1,23 @@
 > Resolving dependencies using Composer Cloud v3.8.1
 
-[8.4MiB/0.19s] Loading composer repositories with package information
-[79.3MiB/9.99s] Updating dependencies
-[93.1MiB/10.23s] Your requirements could not be resolved to an installable set of packages.
-[93.1MiB/10.24s] 
-  Problem 1
-    - Root composer.json requires diversworld/contao-ducapp-bundle dev-main, found diversworld/contao-ducapp-bundle[1.0] but it does not match the constraint.
+[8.4MiB/0.17s] Loading composer repositories with package information
+[101.1MiB/12.14s] Updating dependencies
+[34.6MiB/13.65s] Lock file operations: 2 installs, 1 update, 0 removals
+[34.6MiB/13.65s]   - Locking danielgausi/contao-calendareditor-bundle (4.3.3)
+[34.6MiB/13.65s]   - Locking diversworld/contao-ducapp-bundle (1.0)
+[34.6MiB/13.65s]   - Upgrading oveleon/contao-cookiebar (2.2.2 => 2.2.3)
+[33.6MiB/13.67s] Writing lock file
+[19.4MiB/13.71s] <warning>Package php-http/message-factory is abandoned, you should avoid using it. Use psr/http-factory instead.</warning>
+[19.7MiB/14.07s] No security vulnerability advisories found.
+[20.4MiB/14.09s] Memory usage: 20.38MB (peak: 236.44MB), time: 14.11s.
+[20.4MiB/14.09s] Finished Composer Cloud resolving.
 
-[93.1MiB/10.24s] <warning>Running update with --no-dev does not mean require-dev is ignored, it just means the packages will not be installed. If dev requirements are blocking the update you have to resolve those problems.</warning>
-[54.3MiB/10.27s] Memory usage: 54.26MB (peak: 194.6MB), time: 10.29s.
-[54.3MiB/10.27s] Finished Composer Cloud resolving.
+
+# Job ID C5lPya4ZLGr5uwX71oprSQMgAaOpBaiYP58pEkrLlDZYYDmOoVFtgp0FD1AzxXGqArBNYLSozlKsz9SAXmrFnOvU completed in 16 seconds
+# Memory usage: 20.38MB (peak: 236.44MB), time: 14.11s.
+
+$ /usr/local/bin/php -q -dmax_execution_time=0 -dmemory_limit=-1 -ddisplay_errors=0 -ddisplay_startup_errors=0 -derror_reporting=0 -dallow_url_fopen=1 -ddisable_functions= -ddate.timezone=CET /shared/httpd/duc-contao-5/public/contao-manager.phar.php composer install --no-dev --no-progress --no-ansi --no-interaction --optimize-autoloader
 
 
-# Cloud Job ID 8N296IBffAi9Id1S4WVMe8hVDKYaiT3wCG47fRaMase6f3WDI3beGE4zQ7IJQMHyev8XdRlEH5eSAMH6EArEj3t2K3xcNrzpmvS0yz6mb1TcTj failed
+# Process terminated with exit code 0
+# Result: OK

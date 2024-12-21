@@ -375,15 +375,6 @@ $GLOBALS['TL_LANG']['FMD'][\InspiredMinds\ContaoEventRegistration\Controller\Fro
 $GLOBALS['TL_LANG']['FMD'][\InspiredMinds\ContaoEventRegistration\Controller\FrontendModule\EventRegistrationCancelController::TYPE] = ['Event-Registrierungsstornierung', 'Modul zur Verarbeitung der Stornierung einer Registrierung zu einem Event.'];
 $GLOBALS['TL_LANG']['FMD'][\InspiredMinds\ContaoEventRegistration\Controller\FrontendModule\EventRegistrationListController::TYPE] = ['Event-Registrierungsliste', 'Zeigt eine Liste aller Registrierungen des aktuellen Events.'];
 
-$GLOBALS['TL_LANG']['FMD']['calendarEdit']['0'] = "Kalender mit Frontend Bearbeitung";
-$GLOBALS['TL_LANG']['FMD']['calendarEdit']['1'] = "Fügt der Seite einen Kalender mit zusätzlichen Links zur Frontend-Bearbeitung hinzu.";
-$GLOBALS['TL_LANG']['FMD']['EventEditor']['0'] = "Event-Editor";
-$GLOBALS['TL_LANG']['FMD']['EventEditor']['1'] = "Fügt der Seite ein Formular hinzu zur Bearbeitung von Terminen.";
-$GLOBALS['TL_LANG']['FMD']['EventReaderEditLink']['0'] = "Eventleser: Edit-link";
-$GLOBALS['TL_LANG']['FMD']['EventReaderEditLink']['1'] = "Fügt der Seite einen Link hinzu auf die Seite mit dem passenden Event-Editor.";
-$GLOBALS['TL_LANG']['FMD']['EventHiddenList']['0'] = "Unveröffentlichte Eventliste";
-$GLOBALS['TL_LANG']['FMD']['EventHiddenList']['1'] = "Fügt der Seite eine Liste mit unveröffentlichten(!) Terminen hinzu.";
-
 /*
  * Tags Bundle for Contao Open Source CMS.
  *
@@ -411,6 +402,15 @@ $GLOBALS['TL_LANG']['MOD']['MaeEventCat'] = array('Eventkategorien', 'Veranstalt
  */
 $GLOBALS['TL_LANG']['FMD']['mae_event_filter']['0'] = "Event Kategoriefilter";
 $GLOBALS['TL_LANG']['FMD']['mae_event_filter']['1'] = "Filtert eine Eventliste nach Kategorien [mae_event_categories].";
+
+$GLOBALS['TL_LANG']['FMD']['calendarEdit']['0'] = "Kalender mit Frontend Bearbeitung";
+$GLOBALS['TL_LANG']['FMD']['calendarEdit']['1'] = "Fügt der Seite einen Kalender mit zusätzlichen Links zur Frontend-Bearbeitung hinzu.";
+$GLOBALS['TL_LANG']['FMD']['EventEditor']['0'] = "Event-Editor";
+$GLOBALS['TL_LANG']['FMD']['EventEditor']['1'] = "Fügt der Seite ein Formular hinzu zur Bearbeitung von Terminen.";
+$GLOBALS['TL_LANG']['FMD']['EventReaderEditLink']['0'] = "Eventleser: Edit-link";
+$GLOBALS['TL_LANG']['FMD']['EventReaderEditLink']['1'] = "Fügt der Seite einen Link hinzu auf die Seite mit dem passenden Event-Editor.";
+$GLOBALS['TL_LANG']['FMD']['EventHiddenList']['0'] = "Unveröffentlichte Eventliste";
+$GLOBALS['TL_LANG']['FMD']['EventHiddenList']['1'] = "Fügt der Seite eine Liste mit unveröffentlichten(!) Terminen hinzu.";
 
 // vendor/contao/comments-bundle/contao/languages/de/modules.xlf
 $GLOBALS['TL_LANG']['CTE']['comments']['0'] = 'Kommentare';

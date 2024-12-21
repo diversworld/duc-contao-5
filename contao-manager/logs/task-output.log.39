@@ -1,22 +1,12 @@
-$ /usr/local/bin/php -q -dmax_execution_time=0 -dmemory_limit=-1 -ddisplay_errors=0 -ddisplay_startup_errors=0 -derror_reporting=0 -dallow_url_fopen=1 -ddisable_functions= -ddate.timezone=CET /shared/httpd/duc-contao-5/public/contao-manager.phar.php composer require danielgausi/contao-calendareditor-bundle=4.3 --no-update --no-scripts --prefer-stable --sort-packages --no-ansi --no-interaction
+$ /usr/local/bin/php -q -dmax_execution_time=0 -dmemory_limit=-1 -ddisplay_errors=0 -ddisplay_startup_errors=0 -derror_reporting=0 -dallow_url_fopen=1 -ddisable_functions= -ddate.timezone=CET /shared/httpd/duc-contao-5/vendor/contao/manager-bundle/bin/contao-console cache:clear --env=prod --no-warmup
 
 
 # Process terminated with exit code 0
 # Result: OK
 
 
-> Resolving dependencies using Composer Cloud v3.8.1
-
-[8.4MiB/0.22s] Loading composer repositories with package information
-[79.1MiB/9.81s] Updating dependencies
-[92.7MiB/10.11s] Your requirements could not be resolved to an installable set of packages.
-[92.7MiB/10.11s] 
-  Problem 1
-    - Root composer.json requires danielgausi/contao-calendareditor-bundle 4.3 (exact version match: 4.3, 4.3.0 or 4.3.0.0), found danielgausi/contao-calendareditor-bundle[4.3.3] but it does not match the constraint.
-
-[92.7MiB/10.12s] <warning>Running update with --no-dev does not mean require-dev is ignored, it just means the packages will not be installed. If dev requirements are blocking the update you have to resolve those problems.</warning>
-[54.1MiB/10.14s] Memory usage: 54.1MB (peak: 194.36MB), time: 10.17s.
-[54.1MiB/10.15s] Finished Composer Cloud resolving.
+$ /usr/local/bin/php -q -dmax_execution_time=0 -dmemory_limit=-1 -ddisplay_errors=0 -ddisplay_startup_errors=0 -derror_reporting=0 -dallow_url_fopen=1 -ddisable_functions= -ddate.timezone=CET /shared/httpd/duc-contao-5/vendor/contao/manager-bundle/bin/contao-console cache:warmup --env=prod
 
 
-# Cloud Job ID gAo3b0FUqwkgCXeyZyHXzQBA1ifmoFYGncbNFqnB2XFYzv9TF7UxfidvrOJuHZmjHuIG8UJdq88a0JKjKr3Y45QGdBhBN9UMrsNe1jXkRs1k4QRm failed
+# Process terminated with exit code 0
+# Result: OK

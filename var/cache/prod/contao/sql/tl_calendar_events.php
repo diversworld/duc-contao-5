@@ -288,9 +288,9 @@ $this->arrFields = array (
     'unsigned' => true,
     'default' => 0,
   ),
+  'categories' => 'blob NULL',
   'fe_user' => 'int(10) unsigned NOT NULL default \'0\'',
   'disable_editing' => 'char(1) NOT NULL default \'\'',
-  'categories' => 'blob NULL',
   'noComments' => 
   array (
     'type' => 'boolean',

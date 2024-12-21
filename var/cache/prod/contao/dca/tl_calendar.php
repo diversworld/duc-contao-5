@@ -192,37 +192,6 @@ $GLOBALS['TL_DCA']['tl_calendar']['fields']['reg_cancel_page'] = ['exclude' => \
 }
 
 namespace {
-/**
- * This file is part of
- *
- * CalendarEditorBundle
- * @copyright  Daniel Gaußmann 2018
- * @author     Daniel Gaußmann (Gausi)
- * @package    Calendar_Editor
- * @license    LGPL-3.0-or-later
- * @see        https://github.com/DanielGausi/Contao-CalendarEditor
- *
- * an extension for
- * Contao Open Source CMS
- * (c) Leo Feyer, LGPL-3.0-or-later
- *
- */
-/**
- * Add palettes to tl_calendar
- */
-$GLOBALS['TL_DCA']['tl_calendar']['palettes']['default'] .= ';{edit_legend},AllowEdit';
-$GLOBALS['TL_DCA']['tl_calendar']['palettes']['__selector__'][] = 'AllowEdit';
-$GLOBALS['TL_DCA']['tl_calendar']['subpalettes']['AllowEdit'] = 'caledit_onlyFuture, caledit_jumpTo, caledit_loginRequired, caledit_onlyUser, caledit_groups, caledit_adminGroup';
-$GLOBALS['TL_DCA']['tl_calendar']['fields']['AllowEdit'] = array('label' => &$GLOBALS['TL_LANG']['tl_calendar']['AllowEdit'], 'exclude' => \true, 'filter' => \true, 'inputType' => 'checkbox', 'eval' => array('submitOnChange' => \true), 'sql' => "char(1) NOT NULL default ''");
-$GLOBALS['TL_DCA']['tl_calendar']['fields']['caledit_onlyFuture'] = array('label' => &$GLOBALS['TL_LANG']['tl_calendar']['caledit_onlyFuture'], 'inputType' => 'checkbox', 'eval' => array('default' => 'true'), 'sql' => "char(1) NOT NULL default ''");
-$GLOBALS['TL_DCA']['tl_calendar']['fields']['caledit_jumpTo'] = array('label' => &$GLOBALS['TL_LANG']['tl_calendar']['caledit_jumpTo'], 'exclude' => \true, 'inputType' => 'pageTree', 'eval' => array('fieldType' => 'radio'), 'sql' => "int(10) unsigned NOT NULL default '0'");
-$GLOBALS['TL_DCA']['tl_calendar']['fields']['caledit_loginRequired'] = array('label' => &$GLOBALS['TL_LANG']['tl_calendar']['caledit_loginRequired'], 'inputType' => 'checkbox', 'eval' => array('default' => 'true'), 'sql' => "char(1) NOT NULL default '1'");
-$GLOBALS['TL_DCA']['tl_calendar']['fields']['caledit_onlyUser'] = array('label' => &$GLOBALS['TL_LANG']['tl_calendar']['caledit_onlyUser'], 'exclude' => \true, 'inputType' => 'checkbox', 'sql' => "char(1) NOT NULL default ''");
-$GLOBALS['TL_DCA']['tl_calendar']['fields']['caledit_groups'] = array('label' => &$GLOBALS['TL_LANG']['tl_calendar']['caledit_groups'], 'inputType' => 'checkbox', 'foreignKey' => 'tl_member_group.name', 'eval' => array('multiple' => \true), 'sql' => "blob NULL");
-$GLOBALS['TL_DCA']['tl_calendar']['fields']['caledit_adminGroup'] = array('label' => &$GLOBALS['TL_LANG']['tl_calendar']['caledit_adminGroup'], 'inputType' => 'checkbox', 'foreignKey' => 'tl_member_group.name', 'eval' => array('mandatory' => \false, 'multiple' => \true), 'sql' => "blob NULL");
-}
-
-namespace {
 // new global operation calls categories from within calendar module (therefor the categories table has to be added to the calendar module in config.php)
 \Contao\ArrayUtil::arrayInsert($GLOBALS['TL_DCA']['tl_calendar']['list']['global_operations'], 1, array('mae_categories' => array('label' => &$GLOBALS['TL_LANG']['tl_calendar']['categories_label'], 'href' => 'do=calendar&table=tl_mae_event_cat', 'class' => 'header_new', 'attributes' => 'onclick="Backend.getScrollOffset()" style="padding-left: 22px;background-image: url(\'bundles/pdirmaeeventcategories/cat_icon.png\')"', 'button_callback' => array('tl_calendar_categories', 'buttonCategories'))));
 class tl_calendar_categories extends \Contao\Backend
@@ -240,4 +209,38 @@ class tl_calendar_categories extends \Contao\Backend
         }
     }
 }
+}
+
+namespace {
+/**
+ * This file is part of
+ *
+ * CalendarEditorBundle
+ * @copyright  Daniel Gaußmann 2018
+ * @author     Daniel Gaußmann (Gausi)
+ * @package    Calendar_Editor
+ * @license    LGPL-3.0-or-later
+ * @see        https://github.com/Diversworld/Contao-CalendarEditor
+ *
+ * an extension for
+ * Contao Open Source CMS
+ * (c) Leo Feyer, LGPL-3.0-or-later
+ *
+ */
+/**
+ * Add palettes to tl_calendar
+ */
+$GLOBALS['TL_DCA']['tl_calendar']['palettes']['default'] .= ';{edit_legend},AllowEdit';
+$GLOBALS['TL_DCA']['tl_calendar']['palettes']['__selector__'][] = 'AllowEdit';
+$GLOBALS['TL_DCA']['tl_calendar']['subpalettes']['AllowEdit'] = 'caledit_onlyFuture, caledit_jumpTo, caledit_loginRequired, caledit_onlyUser, caledit_groups, caledit_adminGroup';
+$GLOBALS['TL_DCA']['tl_calendar']['fields']['AllowEdit'] = array('label' => &$GLOBALS['TL_LANG']['tl_calendar']['AllowEdit'], 'exclude' => \true, 'filter' => \true, 'inputType' => 'checkbox', 'eval' => array('submitOnChange' => \true), 'sql' => "char(1) NOT NULL default ''");
+$GLOBALS['TL_DCA']['tl_calendar']['fields']['caledit_onlyFuture'] = array('label' => &$GLOBALS['TL_LANG']['tl_calendar']['caledit_onlyFuture'], 'inputType' => 'checkbox', 'eval' => array('default' => 'true'), 'sql' => "char(1) NOT NULL default ''");
+$GLOBALS['TL_DCA']['tl_calendar']['fields']['caledit_jumpTo'] = array('label' => &$GLOBALS['TL_LANG']['tl_calendar']['caledit_jumpTo'], 'exclude' => \true, 'inputType' => 'pageTree', 'eval' => array('fieldType' => 'radio'), 'sql' => "int(10) unsigned NOT NULL default '0'");
+$GLOBALS['TL_DCA']['tl_calendar']['fields']['caledit_loginRequired'] = array('label' => &$GLOBALS['TL_LANG']['tl_calendar']['caledit_loginRequired'], 'inputType' => 'checkbox', 'eval' => array('default' => 'true'), 'sql' => "char(1) NOT NULL default '1'");
+$GLOBALS['TL_DCA']['tl_calendar']['fields']['caledit_onlyUser'] = array('label' => &$GLOBALS['TL_LANG']['tl_calendar']['caledit_onlyUser'], 'exclude' => \true, 'inputType' => 'checkbox', 'sql' => "char(1) NOT NULL default ''");
+$GLOBALS['TL_DCA']['tl_calendar']['fields']['caledit_groups'] = array('label' => &$GLOBALS['TL_LANG']['tl_calendar']['caledit_groups'], 'inputType' => 'checkbox', 'foreignKey' => 'tl_member_group.name', 'eval' => array(
+    /*'mandatory'=>true, */
+    'multiple' => \true,
+), 'sql' => "blob NULL");
+$GLOBALS['TL_DCA']['tl_calendar']['fields']['caledit_adminGroup'] = array('label' => &$GLOBALS['TL_LANG']['tl_calendar']['caledit_adminGroup'], 'inputType' => 'checkbox', 'foreignKey' => 'tl_member_group.name', 'eval' => array('mandatory' => \false, 'multiple' => \true), 'sql' => "blob NULL");
 }

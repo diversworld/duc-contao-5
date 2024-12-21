@@ -199,14 +199,14 @@ $GLOBALS['TL_LANG']['tl_calendar_events']['reg_enableWaitingList'] = ['Wartelist
 $GLOBALS['TL_LANG']['tl_calendar_events']['reg_waitingListAdvancementNotification'] = ['Benachrichtigung für Aufstieg von Warteliste', 'Diese Benachrichtitung wird versendet wenn eine Teilnehmer*in von der Warteliste auf die reguläre Liste der Anmeldungen aufsteigt.'];
 $GLOBALS['TL_LANG']['tl_calendar_events']['registrations'] = 'Registrierungen';
 
+$GLOBALS['TL_LANG']['tl_calendar_events']['categories'] = array('Kategorien', 'Eine oder mehrere Kategorien auswählen.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['cat_legend'] = 'Kategorien';
+
 $GLOBALS['TL_LANG']['tl_calendar_events']['fe_user']['0'] = "Frontend Autor";
 $GLOBALS['TL_LANG']['tl_calendar_events']['fe_user']['1'] = "Der Frontend-Benutzer, der diesen Termin erstellt hat.";
 $GLOBALS['TL_LANG']['tl_calendar_events']['disable_editing']['0'] = "Frontend-Bearbeitung sperren";
 $GLOBALS['TL_LANG']['tl_calendar_events']['disable_editing']['1'] = "Wenn dies aktiviert ist, kann dieser Termin nicht mehr im Frontend bearbeitet werden. Auch nicht von den Frontend-Administratoren.";
 $GLOBALS['TL_LANG']['tl_calendar_events']['edit_legend'] = "Bearbeitung im Frontend";
-
-$GLOBALS['TL_LANG']['tl_calendar_events']['categories'] = array('Kategorien', 'Eine oder mehrere Kategorien auswählen.');
-$GLOBALS['TL_LANG']['tl_calendar_events']['cat_legend'] = 'Kategorien';
 
 // vendor/contao/comments-bundle/contao/languages/de/tl_calendar_events.xlf
 $GLOBALS['TL_LANG']['tl_calendar_events']['noComments']['0'] = 'Kommentare deaktivieren';

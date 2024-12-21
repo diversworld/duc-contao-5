@@ -741,6 +741,24 @@ $GLOBALS['TL_DCA']['tl_module']['palettes'][\InspiredMinds\ContaoEventRegistrati
 }
 
 namespace {
+// new categories blob field for use in standard eventlist module
+if (isset($GLOBALS['TL_DCA']['tl_module']['palettes']['eventlist'])) {
+    $GLOBALS['TL_DCA']['tl_module']['palettes']['eventlist'] = \str_replace(';{protected_legend:hide}', ';{event_cat_legend:hide},event_categories;{protected_legend:hide}', $GLOBALS['TL_DCA']['tl_module']['palettes']['eventlist']);
+}
+if (isset($GLOBALS['TL_DCA']['tl_module']['palettes']['eventlist'])) {
+    $GLOBALS['TL_DCA']['tl_module']['palettes']['calendar'] = \str_replace(';{protected_legend:hide}', ';{event_cat_legend:hide},event_categories;{protected_legend:hide}', $GLOBALS['TL_DCA']['tl_module']['palettes']['calendar']);
+}
+if (isset($GLOBALS['TL_DCA']['tl_module']['palettes']['eventlist'])) {
+    $GLOBALS['TL_DCA']['tl_module']['palettes']['eventmenu'] = \str_replace(';{protected_legend:hide}', ';{event_cat_legend:hide},event_categories;{protected_legend:hide}', $GLOBALS['TL_DCA']['tl_module']['palettes']['eventmenu']);
+}
+$GLOBALS['TL_DCA']['tl_module']['fields']['event_categories'] = array('label' => &$GLOBALS['TL_LANG']['tl_module']['event_categories'], 'exclude' => \true, 'inputType' => 'checkboxWizard', 'foreignKey' => 'tl_mae_event_cat.title', 'eval' => array('tl_class' => 'clr', 'multiple' => \true, 'fieldType' => 'checkbox', 'foreignTable' => 'tl_mae_event_cat', 'titleField' => 'title', 'searchField' => 'title'), 'sql' => "blob NULL");
+$GLOBALS['TL_DCA']['tl_module']['fields']['mae_event_list'] = array('label' => &$GLOBALS['TL_LANG']['tl_module']['mae_event_list'], 'exclude' => \true, 'inputType' => 'select', 'foreignKey' => 'tl_module.name', 'eval' => array('chosen' => \true, 'tl_class' => 'w50', 'mandatory' => \false), 'sql' => "int(10) unsigned NOT NULL default '0'", 'relation' => array('type' => 'hasOne', 'load' => 'lazy'));
+$GLOBALS['TL_DCA']['tl_module']['fields']['mae_event_catname'] = array('label' => &$GLOBALS['TL_LANG']['tl_module']['mae_event_catname'], 'exclude' => \true, 'inputType' => 'text', 'eval' => array('maxlength' => 50, 'tl_class' => 'w50', 'rgxp' => 'alias'), 'sql' => "varchar(50) NOT NULL default ''");
+$GLOBALS['TL_DCA']['tl_module']['fields']['mae_only_future_cat'] = array('label' => &$GLOBALS['TL_LANG']['tl_module']['mae_only_future_cat'], 'exclude' => \true, 'inputType' => 'checkbox', 'eval' => array('tl_class' => 'clr'), 'sql' => ['type' => 'boolean', 'default' => \false]);
+$GLOBALS['TL_DCA']['tl_module']['palettes']['mae_event_filter'] = '{title_legend},name,type;{mae_setup_legend},mae_event_list,headline,mae_event_catname,mae_only_future_cat;{event_cat_legend:hide},event_categories';
+}
+
+namespace {
 /**
  * Add palettes to tl_module
  */
@@ -792,12 +810,14 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['caledit_dateImageSRC'] = array('label
 //caledit_dateImage, caledit_dateImageSRC'
 class calendar_eventeditor extends \Contao\Backend
 {
+    //use ContainerAwareTrait;
     /**
      * Import the back end user object
      */
     public function __construct()
     {
         parent::__construct();
+        //$this->import('BackendUser', 'User');
     }
     /**
      * Return all event templates as array
@@ -816,23 +836,12 @@ class calendar_eventeditor extends \Contao\Backend
     }
     public function getCalendars()
     {
-        if (\Contao\BackendUser::getInstance()->isAdmin) {
-            return array('default', 'internal', 'article', 'external');
+        // Get the BackendUser from the Symfony container
+        $user = \Contao\System::getContainer()->get('security.token_storage')->getToken()->getUser();
+        if (!$user instanceof \BackendUser || !$user->isAdmin && !\is_array($user->calendars)) {
+            return [];
         }
-        $arrOptions = [];
-        // Add the "internal" option
-        if ($security->isGranted(\Contao\CoreBundle\Security\ContaoCorePermissions::USER_CAN_EDIT_FIELD_OF_TABLE, 'tl_calendar_events::jumpTo') && $security->isGranted(\Contao\CoreBundle\Security\ContaoCorePermissions::USER_CAN_ACCESS_MODULE, 'page')) {
-            $arrOptions[] = 'internal';
-        }
-        // Add the "article" option
-        if ($security->isGranted(\Contao\CoreBundle\Security\ContaoCorePermissions::USER_CAN_EDIT_FIELD_OF_TABLE, 'tl_calendar_events::articleId') && $security->isGranted(\Contao\CoreBundle\Security\ContaoCorePermissions::USER_CAN_ACCESS_MODULE, 'article')) {
-            $arrOptions[] = 'article';
-        }
-        // Add the "external" option
-        if ($security->isGranted(\Contao\CoreBundle\Security\ContaoCorePermissions::USER_CAN_EDIT_FIELD_OF_TABLE, 'tl_calendar_events::url')) {
-            $arrOptions[] = 'external';
-        }
-        $arrCalendars = [];
+        $arrCalendars = array();
         $objCalendars = $this->Database->execute("SELECT id, title FROM tl_calendar ORDER BY title");
         while ($objCalendars->next()) {
             if ($this->User->hasAccess($objCalendars->id, 'calendars')) {
@@ -848,35 +857,24 @@ class calendar_eventeditor extends \Contao\Backend
     public function getConfigFiles()
     {
         $arrConfigs = array();
-        //$arrFiles = scan(TL_ROOT . '/system/config/');
-        $arrFiles = \scandir('../tinyMCE/');
-        // . '/system/config/');
-        foreach ($arrFiles as $file) {
-            //if (substr($file, 0, 4) == 'tiny') {
-            $arrConfigs[] = \basename($file, '.php');
-            //}
+        // Get the root directory from the Symfony container
+        $rootDir = \Contao\System::getContainer()->getParameter('kernel.project_dir');
+        // Define the path to the tinyMCE configuration files
+        $tinyMCEPath = $rootDir . '/vendor/mindbird/contao-calendar-editor/src/Resources/contao/tinyMCE/';
+        // Check if the directory exists
+        if (\is_dir($tinyMCEPath)) {
+            // Use scandir to list files in the directory
+            $arrFiles = \scandir($tinyMCEPath);
+            foreach ($arrFiles as $file) {
+                // Include only files with the .php extension
+                if (\pathinfo($file, \PATHINFO_EXTENSION) === 'php') {
+                    $arrConfigs[] = \basename($file, '.php');
+                }
+            }
         }
         return $arrConfigs;
     }
 }
-}
-
-namespace {
-// new categories blob field for use in standard eventlist module
-if (isset($GLOBALS['TL_DCA']['tl_module']['palettes']['eventlist'])) {
-    $GLOBALS['TL_DCA']['tl_module']['palettes']['eventlist'] = \str_replace(';{protected_legend:hide}', ';{event_cat_legend:hide},event_categories;{protected_legend:hide}', $GLOBALS['TL_DCA']['tl_module']['palettes']['eventlist']);
-}
-if (isset($GLOBALS['TL_DCA']['tl_module']['palettes']['eventlist'])) {
-    $GLOBALS['TL_DCA']['tl_module']['palettes']['calendar'] = \str_replace(';{protected_legend:hide}', ';{event_cat_legend:hide},event_categories;{protected_legend:hide}', $GLOBALS['TL_DCA']['tl_module']['palettes']['calendar']);
-}
-if (isset($GLOBALS['TL_DCA']['tl_module']['palettes']['eventlist'])) {
-    $GLOBALS['TL_DCA']['tl_module']['palettes']['eventmenu'] = \str_replace(';{protected_legend:hide}', ';{event_cat_legend:hide},event_categories;{protected_legend:hide}', $GLOBALS['TL_DCA']['tl_module']['palettes']['eventmenu']);
-}
-$GLOBALS['TL_DCA']['tl_module']['fields']['event_categories'] = array('label' => &$GLOBALS['TL_LANG']['tl_module']['event_categories'], 'exclude' => \true, 'inputType' => 'checkboxWizard', 'foreignKey' => 'tl_mae_event_cat.title', 'eval' => array('tl_class' => 'clr', 'multiple' => \true, 'fieldType' => 'checkbox', 'foreignTable' => 'tl_mae_event_cat', 'titleField' => 'title', 'searchField' => 'title'), 'sql' => "blob NULL");
-$GLOBALS['TL_DCA']['tl_module']['fields']['mae_event_list'] = array('label' => &$GLOBALS['TL_LANG']['tl_module']['mae_event_list'], 'exclude' => \true, 'inputType' => 'select', 'foreignKey' => 'tl_module.name', 'eval' => array('chosen' => \true, 'tl_class' => 'w50', 'mandatory' => \false), 'sql' => "int(10) unsigned NOT NULL default '0'", 'relation' => array('type' => 'hasOne', 'load' => 'lazy'));
-$GLOBALS['TL_DCA']['tl_module']['fields']['mae_event_catname'] = array('label' => &$GLOBALS['TL_LANG']['tl_module']['mae_event_catname'], 'exclude' => \true, 'inputType' => 'text', 'eval' => array('maxlength' => 50, 'tl_class' => 'w50', 'rgxp' => 'alias'), 'sql' => "varchar(50) NOT NULL default ''");
-$GLOBALS['TL_DCA']['tl_module']['fields']['mae_only_future_cat'] = array('label' => &$GLOBALS['TL_LANG']['tl_module']['mae_only_future_cat'], 'exclude' => \true, 'inputType' => 'checkbox', 'eval' => array('tl_class' => 'clr'), 'sql' => ['type' => 'boolean', 'default' => \false]);
-$GLOBALS['TL_DCA']['tl_module']['palettes']['mae_event_filter'] = '{title_legend},name,type;{mae_setup_legend},mae_event_list,headline,mae_event_catname,mae_only_future_cat;{event_cat_legend:hide},event_categories';
 }
 
 namespace {

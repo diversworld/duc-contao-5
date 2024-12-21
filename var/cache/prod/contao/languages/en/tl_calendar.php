@@ -63,6 +63,8 @@ $GLOBALS['TL_LANG']['tl_calendar']['reg_legend'] = 'Registration';
 $GLOBALS['TL_LANG']['tl_calendar']['reg_confirm_page'] = ['Redirect page for confirmation', 'The target page where the event registration confirmation module is integrated. If no page is defined, the redirect page of the calendar is used.'];
 $GLOBALS['TL_LANG']['tl_calendar']['reg_cancel_page'] = ['Redirect page for cancellation', 'The target page where the event registration cancellation module is integrated. If no page is defined, the redirect page of the calendar is used.'];
 
+$GLOBALS['TL_LANG']['tl_calendar']['categories_label'] = array('Categories', 'edit categories');
+
 /**
  * Miscellaneous
  */
@@ -74,8 +76,6 @@ $GLOBALS['TL_LANG']['tl_calendar']['caledit_onlyUser'] = array('Allow editing on
 $GLOBALS['TL_LANG']['tl_calendar']['caledit_groups'] = array('Allowed member groups for editing', 'These groups will be able to add (and edit) events into this calendar.');
 $GLOBALS['TL_LANG']['tl_calendar']['caledit_adminGroup'] = array('Frontend-Admins for editing', 'Frontend-Admins can edit all events, even if "only user" is checked.');
 $GLOBALS['TL_LANG']['tl_calendar']['edit_legend'] = 'Frontend editing';
-
-$GLOBALS['TL_LANG']['tl_calendar']['categories_label'] = array('Categories', 'edit categories');
 
 // vendor/contao/comments-bundle/contao/languages/en/tl_calendar.xlf
 $GLOBALS['TL_LANG']['tl_calendar']['allowComments']['0'] = 'Enable comments';

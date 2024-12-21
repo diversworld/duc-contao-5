@@ -397,11 +397,6 @@ $GLOBALS['TL_LANG']['FMD'][\InspiredMinds\ContaoEventRegistration\Controller\Fro
 $GLOBALS['TL_LANG']['FMD'][\InspiredMinds\ContaoEventRegistration\Controller\FrontendModule\EventRegistrationCancelController::TYPE] = ['Event registration cancellation', 'Module handling registration cancellations.'];
 $GLOBALS['TL_LANG']['FMD'][\InspiredMinds\ContaoEventRegistration\Controller\FrontendModule\EventRegistrationListController::TYPE] = ['Event registration list', 'Lists current registrations for an event.'];
 
-$GLOBALS['TL_LANG']['FMD']['calendarEdit'] = array('Calendar FE edit', 'Adds a calendar to the page with additional frontend editing-links (for authorized members).');
-$GLOBALS['TL_LANG']['FMD']['EventEditor'] = array('Event editor', 'Add a formular to the page which allows an authorized FE user to add and edit events.');
-$GLOBALS['TL_LANG']['FMD']['EventReaderEditLink'] = array('Event reader: Edit link', 'Add a link to the FE edit page on a page with an event reader.');
-$GLOBALS['TL_LANG']['FMD']['EventHiddenList'] = array('Unpublished event list', 'Adds a list of unpublished events to the page.');
-
 /*
  * Tags Bundle for Contao Open Source CMS.
  *
@@ -429,6 +424,11 @@ $GLOBALS['TL_LANG']['MOD']['MaeEventCat'] = array('Event categories', 'manage ev
  */
 $GLOBALS['TL_LANG']['FMD']['mae_event_filter']['0'] = "Event Category filter";
 $GLOBALS['TL_LANG']['FMD']['mae_event_filter']['1'] = "filters an event list by categories [mae_event_categories].";
+
+$GLOBALS['TL_LANG']['FMD']['calendarEdit'] = array('Calendar FE edit', 'Adds a calendar to the page with additional frontend editing-links (for authorized members).');
+$GLOBALS['TL_LANG']['FMD']['EventEditor'] = array('Event editor', 'Add a formular to the page which allows an authorized FE user to add and edit events.');
+$GLOBALS['TL_LANG']['FMD']['EventReaderEditLink'] = array('Event reader: Edit link', 'Add a link to the FE edit page on a page with an event reader.');
+$GLOBALS['TL_LANG']['FMD']['EventHiddenList'] = array('Unpublished event list', 'Adds a list of unpublished events to the page.');
 
 // vendor/contao/comments-bundle/contao/languages/en/modules.xlf
 $GLOBALS['TL_LANG']['CTE']['comments']['0'] = 'Comments';

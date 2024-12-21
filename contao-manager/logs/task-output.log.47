@@ -1,19 +1,30 @@
-> Resolving dependencies using Composer Cloud v3.7.1
-
-[8.5MiB/0.21s] Loading composer repositories with package information
-[104.5MiB/15.74s] Updating dependencies
-[87.2MiB/17.52s] Nothing to modify in lock file
-[18.1MiB/17.57s] <warning>Package php-http/message-factory is abandoned, you should avoid using it. Use psr/http-factory instead.</warning>
-[18.4MiB/17.93s] No security vulnerability advisories found.
-[19.1MiB/17.93s] Memory usage: 19.06MB (peak: 255.98MB), time: 17.94s.
-[19.1MiB/17.94s] Finished Composer Cloud resolving.
-
-
-# Job ID 3wVraSVbcBPW4l9VXfNKtTXxHcV5rz5MOOG0qb26Cf3HFHANZTrDH78WykMwkobSh0iJBf completed in 16 seconds
-# Memory usage: 19.06MB (peak: 255.98MB), time: 17.94s.
-
-$ /usr/local/bin/php -q -dmax_execution_time=0 -dmemory_limit=-1 -ddisplay_errors=0 -ddisplay_startup_errors=0 -derror_reporting=0 -dallow_url_fopen=1 -ddisable_functions= -ddate.timezone=CET /shared/httpd/duc-contao-5/public/contao-manager.phar.php composer install --no-dev --no-progress --no-ansi --no-interaction --optimize-autoloader
+$ /usr/local/bin/php -q -dmax_execution_time=0 -dmemory_limit=-1 -ddisplay_errors=0 -ddisplay_startup_errors=0 -derror_reporting=0 -dallow_url_fopen=1 -ddisable_functions= -ddate.timezone=CET /shared/httpd/duc-contao-5/public/contao-manager.phar.php composer require contao/maker-bundle sineos/filemanager-bundle markocupic/contao-bundle-creator-bundle --no-update --no-scripts --prefer-stable --sort-packages --no-ansi --no-interaction
 
 
 # Process terminated with exit code 0
 # Result: OK
+
+
+> Resolving dependencies using Composer Cloud v3.8.1
+
+[8.3MiB/0.18s] Loading composer repositories with package information
+[79.7MiB/10.56s] Updating dependencies
+[93.2MiB/10.84s] Your requirements could not be resolved to an installable set of packages.
+[93.2MiB/10.85s] 
+  Problem 1
+    - Root composer.json requires contao/maker-bundle ^5.4 -> satisfiable by contao/maker-bundle[5.4.0, ..., 5.4.7].
+    - contao/maker-bundle 5.4.0 requires contao/core-bundle 5.4.0 -> found contao/core-bundle[5.4.0] but these were not loaded, likely because it conflicts with another require.
+    - contao/maker-bundle 5.4.1 requires contao/core-bundle 5.4.1 -> found contao/core-bundle[5.4.1] but these were not loaded, likely because it conflicts with another require.
+    - contao/maker-bundle 5.4.2 requires contao/core-bundle 5.4.2 -> found contao/core-bundle[5.4.2] but these were not loaded, likely because it conflicts with another require.
+    - contao/maker-bundle 5.4.3 requires contao/core-bundle 5.4.3 -> found contao/core-bundle[5.4.3] but these were not loaded, likely because it conflicts with another require.
+    - contao/maker-bundle 5.4.4 requires contao/core-bundle 5.4.4 -> found contao/core-bundle[5.4.4] but these were not loaded, likely because it conflicts with another require.
+    - contao/maker-bundle 5.4.5 requires contao/core-bundle 5.4.5 -> found contao/core-bundle[5.4.5] but these were not loaded, likely because it conflicts with another require.
+    - contao/maker-bundle 5.4.6 requires contao/core-bundle 5.4.6 -> found contao/core-bundle[5.4.6] but these were not loaded, likely because it conflicts with another require.
+    - contao/maker-bundle 5.4.7 requires contao/core-bundle 5.4.7 -> found contao/core-bundle[5.4.7] but these were not loaded, likely because it conflicts with another require.
+
+[93.2MiB/10.85s] <warning>Running update with --no-dev does not mean require-dev is ignored, it just means the packages will not be installed. If dev requirements are blocking the update you have to resolve those problems.</warning>
+[54.4MiB/10.87s] Memory usage: 54.37MB (peak: 196.21MB), time: 10.88s.
+[54.4MiB/10.87s] Finished Composer Cloud resolving.
+
+
+# Cloud Job ID DdFAJIpALJ3FF7tvCgwQ4xxz300HYomEQxPuaiQSLpvmdykufVsJb3QmELqQryP7MJ0mjDjAqw76IbzbMqGObFqsjVPsWG5kSGBq2Ngnp3APTsYlaanLNdxiXKN failed

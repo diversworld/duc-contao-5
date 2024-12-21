@@ -486,6 +486,13 @@ $GLOBALS['TL_LANG']['tl_module']['leadOptInUserInteractionMessage']['1'] = 'Fül
 $GLOBALS['TL_LANG']['tl_module']['leadOptInUserInteractionSubmit']['0'] = 'Bestätigungsfeld';
 $GLOBALS['TL_LANG']['tl_module']['leadOptInUserInteractionSubmit']['1'] = 'Geben Sie hier den Text für den Bestätigungs-Button an.';
 
+$GLOBALS['TL_LANG']['tl_module']['event_categories'] = array('Eventkategorien', 'Eine oder mehrere Kategorien auswählen, die in der Liste angezeigt werden sollen, ansonsten werden alle angezeigt.');
+$GLOBALS['TL_LANG']['tl_module']['event_cat_legend'] = 'Eventkategorien';
+$GLOBALS['TL_LANG']['tl_module']['mae_event_list'] = array('Eventliste', 'Das Eventlistenmodul, das gefiltert werden soll');
+$GLOBALS['TL_LANG']['tl_module']['mae_setup_legend'] = 'Einstellungen';
+$GLOBALS['TL_LANG']['tl_module']['mae_event_catname'] = array('Filter URL Parameter', 'Falls nichts angegeben wird, lautet der Filter-Parameter "category"');
+$GLOBALS['TL_LANG']['tl_module']['mae_only_future_cat'] = array('Nur Kategorien aus zukünftigen Events auflisten', 'Sollen nur Kategorien im Filter aufgelistet werden, die mindestens einem zukünftigen Event zugewiesen sind');
+
 $GLOBALS['TL_LANG']['tl_module']['caledit_add_jumpTo']['0'] = "Weiterleitungsseite zum Hinzufügen von Terminen";
 $GLOBALS['TL_LANG']['tl_module']['caledit_add_jumpTo']['1'] = "Bitte wählen Sie die Seite aus, auf die der Nutzer bei Klick auf einen \"Termin hinzufügen\"-Link weitergeleitet wird.";
 $GLOBALS['TL_LANG']['tl_module']['caledit_template']['0'] = "Event-Editor Template (bearbeiten)";
@@ -541,13 +548,6 @@ $GLOBALS['TL_LANG']['tl_module']['caledit_dateDirection_ref']['ltToday'] = 'Nur 
 $GLOBALS['TL_LANG']['tl_module']['caledit_dateDirection_ref']['leToday'] = 'Nur Datum in der Vergangenheit (inkl. Heute)';
 $GLOBALS['TL_LANG']['tl_module']['caledit_dateDirection_ref']['geToday'] = 'Nur Datum in der Zukunft (inkl. Heute)';
 $GLOBALS['TL_LANG']['tl_module']['caledit_dateDirection_ref']['gtToday'] = 'Nur Datum in der Zukunft (exkl. Heute)';
-
-$GLOBALS['TL_LANG']['tl_module']['event_categories'] = array('Eventkategorien', 'Eine oder mehrere Kategorien auswählen, die in der Liste angezeigt werden sollen, ansonsten werden alle angezeigt.');
-$GLOBALS['TL_LANG']['tl_module']['event_cat_legend'] = 'Eventkategorien';
-$GLOBALS['TL_LANG']['tl_module']['mae_event_list'] = array('Eventliste', 'Das Eventlistenmodul, das gefiltert werden soll');
-$GLOBALS['TL_LANG']['tl_module']['mae_setup_legend'] = 'Einstellungen';
-$GLOBALS['TL_LANG']['tl_module']['mae_event_catname'] = array('Filter URL Parameter', 'Falls nichts angegeben wird, lautet der Filter-Parameter "category"');
-$GLOBALS['TL_LANG']['tl_module']['mae_only_future_cat'] = array('Nur Kategorien aus zukünftigen Events auflisten', 'Sollen nur Kategorien im Filter aufgelistet werden, die mindestens einem zukünftigen Event zugewiesen sind');
 
 // vendor/contao/comments-bundle/contao/languages/de/tl_module.xlf
 $GLOBALS['TL_LANG']['tl_module']['comment_legend'] = 'Kommentareinstellungen';

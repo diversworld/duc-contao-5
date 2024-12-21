@@ -48,7 +48,7 @@
         "terminal42/notification_center": "^2.0",
         "diversworld/contao-ducapp-bundle": "^1.0",
         "diversworld/contao-check-bundle": "1.0",
-        "danielgausi/contao-calendareditor-bundle": "^4.3"
+        "diversworld/contao-calendar-editor-bundle": "^4.3"
     },
     "extra": {
         "public-dir": "public",
@@ -73,7 +73,7 @@
         },
         {
           "type": "path",
-          "url": "vendor/danielgausi/contao-calendareditor-bundle"
+          "url": "vendor/diversworld/contao-calendar-editor-bundle"
         }
     ],
     "config": {

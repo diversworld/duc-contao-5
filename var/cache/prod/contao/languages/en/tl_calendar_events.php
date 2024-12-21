@@ -199,15 +199,15 @@ $GLOBALS['TL_LANG']['tl_calendar_events']['reg_enableWaitingList'] = ['Enable wa
 $GLOBALS['TL_LANG']['tl_calendar_events']['reg_waitingListAdvancementNotification'] = ['Advancement from waiting list notification', 'This notification will be sent when a participant is moved from the waiting list to the regular list of active registrations.'];
 $GLOBALS['TL_LANG']['tl_calendar_events']['registrations'] = 'Registrations';
 
+$GLOBALS['TL_LANG']['tl_calendar_events']['categories'] = array('Categories', 'Select one or more categories.');
+$GLOBALS['TL_LANG']['tl_calendar_events']['cat_legend'] = 'Categories';
+
 /**
  * Miscellaneous
  */
 $GLOBALS['TL_LANG']['tl_calendar_events']['fe_user'] = array('Frontend author', 'The Frontend user who created this event.');
 $GLOBALS['TL_LANG']['tl_calendar_events']['disable_editing'] = array('Disable Frontend editing', 'If this is checked, no Frontend user is allowed to edit this event (including the author and Frontend admins).');
 $GLOBALS['TL_LANG']['tl_calendar_events']['edit_legend'] = 'Frontend editing';
-
-$GLOBALS['TL_LANG']['tl_calendar_events']['categories'] = array('Categories', 'Select one or more categories.');
-$GLOBALS['TL_LANG']['tl_calendar_events']['cat_legend'] = 'Categories';
 
 // vendor/contao/comments-bundle/contao/languages/en/tl_calendar_events.xlf
 $GLOBALS['TL_LANG']['tl_calendar_events']['noComments']['0'] = 'Disable comments';

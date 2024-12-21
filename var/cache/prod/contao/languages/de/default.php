@@ -1285,6 +1285,15 @@ $GLOBALS['TL_LANG']['CTE']['nodes'] = ['Nodes', 'Ein oder mehrere Nodes mit Inha
  */
 $GLOBALS['TL_LANG']['ERR']['invalidNodes'] = 'Die Nodes vom Typ "Ordner" sind nicht erlaubt: %s';
 
+/*
+ * Tags Bundle for Contao Open Source CMS.
+ *
+ * @copyright  Copyright (c) 2020, Codefog
+ * @author     Codefog <https://codefog.pl>
+ * @license    MIT
+ */
+$GLOBALS['TL_LANG']['MSC']['cfg_tags.add'] = 'Hinzufügen';
+
 $GLOBALS['TL_LANG']['MSC']['caledit_addLabel'] = "[+]";
 $GLOBALS['TL_LANG']['MSC']['caledit_addTitle'] = "Einen Termin an diesem Tag einfügen.";
 $GLOBALS['TL_LANG']['MSC']['caledit_editLabel'] = "[bearbeiten]";
@@ -1346,15 +1355,6 @@ $GLOBALS['TL_LANG']['MSC']['caledit_MultipleContentElements'] = "Für diesen Ter
 $GLOBALS['TL_LANG']['MSC']['caledit_ContentElementWithImage'] = "Diesem Termin wurde ein Bild hinzugefügt, das Sie mit diesem Formular nicht bearbeiten können. Benutzen Sie dafür bitte das Backend.";
 $GLOBALS['TL_LANG']['MSC']['caledit_error'] = "Ein Fehler ist aufgetreten.";
 $GLOBALS['TL_LANG']['MSC']['caledit_CloneWarning'] = "Sie sind dabei, einen Termin zu duplizieren. Stellen Sie sicher, dass alle Informationen korrekt sind, da Sie sonst später jeden einzelnen Termin bearbeiten müssen.";
-
-/*
- * Tags Bundle for Contao Open Source CMS.
- *
- * @copyright  Copyright (c) 2020, Codefog
- * @author     Codefog <https://codefog.pl>
- * @license    MIT
- */
-$GLOBALS['TL_LANG']['MSC']['cfg_tags.add'] = 'Hinzufügen';
 
 // vendor/contao/comments-bundle/contao/languages/de/default.xlf
 $GLOBALS['TL_LANG']['MSC']['comments'] = 'Kommentare';

@@ -258,7 +258,6 @@
       <path value="$PROJECT_DIR$/vendor/oveleon/contao-cookiebar" />
       <path value="$PROJECT_DIR$/vendor/symfony-cmf/routing" />
       <path value="$PROJECT_DIR$/vendor/cgoit/contao-leads-optin-bundle" />
-      <path value="$PROJECT_DIR$/vendor/danielgausi/contao-calendar-editor" />
       <path value="$PROJECT_DIR$/vendor/heimrichhannot/contao-multi-column-editor-bundle" />
       <path value="$PROJECT_DIR$/vendor/heimrichhannot/contao-encore-contracts" />
       <path value="$PROJECT_DIR$/vendor/heimrichhannot/contao-ajax-bundle" />
@@ -266,9 +265,7 @@
       <path value="$PROJECT_DIR$/vendor/sineos/filemanager-bundle" />
       <path value="$PROJECT_DIR$/vendor/markocupic/contao-bundle-creator-bundle" />
       <path value="$PROJECT_DIR$/vendor/markocupic/zip-bundle" />
-      <path value="$PROJECT_DIR$/vendor/danielgausi/contao-calendareditor-bundle" />
       <path value="$PROJECT_DIR$/vendor/diversworld/contao-check-bundle" />
-      <path value="$PROJECT_DIR$/vendor/danielgausi/.git" />
       <path value="$PROJECT_DIR$/vendor/bugbuster/contao-botdetection-bundle_compare" />
       <path value="$PROJECT_DIR$/vendor/diversworld/contao-calendar-editor-bundle" />
     </include_path>

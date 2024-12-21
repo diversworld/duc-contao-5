@@ -486,6 +486,13 @@ $GLOBALS['TL_LANG']['tl_module']['leadOptInUserInteractionMessage']['1'] = 'Comp
 $GLOBALS['TL_LANG']['tl_module']['leadOptInUserInteractionSubmit']['0'] = 'Confirmation button';
 $GLOBALS['TL_LANG']['tl_module']['leadOptInUserInteractionSubmit']['1'] = 'Here you can specify the text for the confirmation button.';
 
+$GLOBALS['TL_LANG']['tl_module']['event_categories'] = array('Event categories', 'Select one or more categories to be displayed in the list.');
+$GLOBALS['TL_LANG']['tl_module']['event_cat_legend'] = 'Event categories';
+$GLOBALS['TL_LANG']['tl_module']['mae_event_list'] = array('Event list', 'The event list module which has to be filtered');
+$GLOBALS['TL_LANG']['tl_module']['mae_setup_legend'] = 'Setup';
+$GLOBALS['TL_LANG']['tl_module']['mae_event_catname'] = array('Filter URL Parameter', 'if nothing specified, it will be "category"');
+$GLOBALS['TL_LANG']['tl_module']['mae_only_future_cat'] = array('List categories of future events, only', 'Should only categories be listed in the filter, which are assigned to at least one event in the future');
+
 $GLOBALS['TL_LANG']['tl_module']['caledit_add_jumpTo'] = array('Redirect page for adding events', 'Please choose the page to which the FE user will be redirected when adding an event.');
 $GLOBALS['TL_LANG']['tl_module']['caledit_template'] = array('Event editor template (edit)', 'Select the template for the event editor when editing an event.');
 $GLOBALS['TL_LANG']['tl_module']['caledit_delete_template'] = array('Event editor template (delete)', 'Select the template for the event editor when deleting an event.');
@@ -527,13 +534,6 @@ $GLOBALS['TL_LANG']['tl_module']['caledit_dateDirection_ref']['ltToday'] = 'Only
 $GLOBALS['TL_LANG']['tl_module']['caledit_dateDirection_ref']['leToday'] = 'Only dates in the past (including today)';
 $GLOBALS['TL_LANG']['tl_module']['caledit_dateDirection_ref']['geToday'] = 'Only dates in the future (including today)';
 $GLOBALS['TL_LANG']['tl_module']['caledit_dateDirection_ref']['gtToday'] = 'Only dates in the future (excluding today)';
-
-$GLOBALS['TL_LANG']['tl_module']['event_categories'] = array('Event categories', 'Select one or more categories to be displayed in the list.');
-$GLOBALS['TL_LANG']['tl_module']['event_cat_legend'] = 'Event categories';
-$GLOBALS['TL_LANG']['tl_module']['mae_event_list'] = array('Event list', 'The event list module which has to be filtered');
-$GLOBALS['TL_LANG']['tl_module']['mae_setup_legend'] = 'Setup';
-$GLOBALS['TL_LANG']['tl_module']['mae_event_catname'] = array('Filter URL Parameter', 'if nothing specified, it will be "category"');
-$GLOBALS['TL_LANG']['tl_module']['mae_only_future_cat'] = array('List categories of future events, only', 'Should only categories be listed in the filter, which are assigned to at least one event in the future');
 
 // vendor/contao/comments-bundle/contao/languages/en/tl_module.xlf
 $GLOBALS['TL_LANG']['tl_module']['comment_legend'] = 'Comment settings';

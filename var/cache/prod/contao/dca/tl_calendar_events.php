@@ -369,15 +369,20 @@ $GLOBALS['TL_DCA']['tl_calendar_events']['list']['operations'] = \array_slice($G
 }
 
 namespace {
+\Contao\CoreBundle\DataContainer\PaletteManipulator::create()->addField('categories', 'title_legend', 'append')->applyToPalette('default', 'tl_calendar_events')->applyToPalette('internal', 'tl_calendar_events')->applyToPalette('article', 'tl_calendar_events')->applyToPalette('external', 'tl_calendar_events');
+$GLOBALS['TL_DCA']['tl_calendar_events']['fields']['categories'] = array('label' => &$GLOBALS['TL_LANG']['tl_calendar_events']['categories'], 'exclude' => \true, 'filter' => \true, 'inputType' => 'checkboxWizard', 'foreignKey' => 'tl_mae_event_cat.title', 'eval' => array('tl_class' => 'clr', 'multiple' => \true, 'fieldType' => 'checkbox', 'foreignTable' => 'tl_mae_event_cat', 'titleField' => 'title', 'searchField' => 'title'), 'sql' => "blob NULL");
+}
+
+namespace {
 /**
- * This file is part of 
- * 
+ * This file is part of
+ *
  * CalendarEditorBundle
  * @copyright  Daniel Gaußmann 2018
- * @author     Daniel Gaußmann (Gausi) 
+ * @author     Daniel Gaußmann (Gausi)
  * @package    Calendar_Editor
  * @license    LGPL-3.0-or-later
- * @see        https://github.com/DanielGausi/Contao-CalendarEditor
+ * @see        https://github.com/Diversworld/Contao-CalendarEditor
  *
  * an extension for
  * Contao Open Source CMS
@@ -387,11 +392,6 @@ namespace {
 $GLOBALS['TL_DCA']['tl_calendar_events']['palettes']['default'] .= ';{edit_legend},fe_user, disable_editing';
 $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['fe_user'] = array('label' => &$GLOBALS['TL_LANG']['tl_calendar_events']['fe_user'], 'inputType' => 'select', 'exclude' => \true, 'foreignKey' => 'tl_member.username', 'eval' => array('includeBlankOption' => \true, 'tl_class' => 'w50'), 'sql' => "int(10) unsigned NOT NULL default '0'");
 $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['disable_editing'] = array('label' => &$GLOBALS['TL_LANG']['tl_calendar_events']['disable_editing'], 'inputType' => 'checkbox', 'eval' => array('tl_class' => 'w50'), 'sql' => "char(1) NOT NULL default ''");
-}
-
-namespace {
-\Contao\CoreBundle\DataContainer\PaletteManipulator::create()->addField('categories', 'title_legend', 'append')->applyToPalette('default', 'tl_calendar_events')->applyToPalette('internal', 'tl_calendar_events')->applyToPalette('article', 'tl_calendar_events')->applyToPalette('external', 'tl_calendar_events');
-$GLOBALS['TL_DCA']['tl_calendar_events']['fields']['categories'] = array('label' => &$GLOBALS['TL_LANG']['tl_calendar_events']['categories'], 'exclude' => \true, 'filter' => \true, 'inputType' => 'checkboxWizard', 'foreignKey' => 'tl_mae_event_cat.title', 'eval' => array('tl_class' => 'clr', 'multiple' => \true, 'fieldType' => 'checkbox', 'foreignTable' => 'tl_mae_event_cat', 'titleField' => 'title', 'searchField' => 'title'), 'sql' => "blob NULL");
 }
 
 namespace {

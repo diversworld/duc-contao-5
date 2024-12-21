@@ -88,11 +88,11 @@
       <parameter key="CgoitLeadsOptinBundle">Cgoit\LeadsOptinBundle\CgoitLeadsOptinBundle</parameter>
       <parameter key="Terminal42NodeBundle">Terminal42\NodeBundle\Terminal42NodeBundle</parameter>
       <parameter key="ContaoEventRegistrationBundle">InspiredMinds\ContaoEventRegistration\ContaoEventRegistrationBundle</parameter>
-      <parameter key="CalendarEditorBundle">DanielGausi\CalendarEditorBundle\CalendarEditorBundle</parameter>
       <parameter key="BugBusterContaoDlstatsExportBundle">BugBuster\DlstatsExportBundle\BugBusterContaoDlstatsExportBundle</parameter>
       <parameter key="CodefogTagsBundle">Codefog\TagsBundle\CodefogTagsBundle</parameter>
       <parameter key="Terminal42NewsNewsletterBundle">Terminal42\NewsNewsletterBundle\Terminal42NewsNewsletterBundle</parameter>
       <parameter key="PdirMaeEventCategoriesBundle">Pdir\MaeEventCategoriesBundle\PdirMaeEventCategoriesBundle</parameter>
+      <parameter key="CalendarEditorBundle">Diversworld\CalendarEditorBundle\CalendarEditorBundle</parameter>
       <parameter key="ContaoCommentsBundle">Contao\CommentsBundle\ContaoCommentsBundle</parameter>
       <parameter key="CgoitFormFillPdfBundle">Cgoit\FormFillPdfBundle\CgoitFormFillPdfBundle</parameter>
       <parameter key="CgoitCmaceBundle">Cgoit\CmaceBundle\CgoitCmaceBundle</parameter>
@@ -400,10 +400,6 @@
         <parameter key="path">/shared/httpd/duc-contao-5/vendor/inspiredminds/contao-event-registration</parameter>
         <parameter key="namespace">InspiredMinds\ContaoEventRegistration</parameter>
       </parameter>
-      <parameter key="CalendarEditorBundle" type="collection">
-        <parameter key="path">/shared/httpd/duc-contao-5/vendor/danielgausi/contao-calendareditor-bundle/src</parameter>
-        <parameter key="namespace">DanielGausi\CalendarEditorBundle</parameter>
-      </parameter>
       <parameter key="BugBusterContaoDlstatsExportBundle" type="collection">
         <parameter key="path">/shared/httpd/duc-contao-5/vendor/bugbuster/contao-dlstats-statistic-export-bundle/src</parameter>
         <parameter key="namespace">BugBuster\DlstatsExportBundle</parameter>
@@ -419,6 +415,10 @@
       <parameter key="PdirMaeEventCategoriesBundle" type="collection">
         <parameter key="path">/shared/httpd/duc-contao-5/vendor/marebe1602/mae_event_categories</parameter>
         <parameter key="namespace">Pdir\MaeEventCategoriesBundle</parameter>
+      </parameter>
+      <parameter key="CalendarEditorBundle" type="collection">
+        <parameter key="path">/shared/httpd/duc-contao-5/vendor/diversworld/contao-calendar-editor-bundle/src</parameter>
+        <parameter key="namespace">Diversworld\CalendarEditorBundle</parameter>
       </parameter>
       <parameter key="ContaoCommentsBundle" type="collection">
         <parameter key="path">/shared/httpd/duc-contao-5/vendor/contao/comments-bundle</parameter>
@@ -1002,11 +1002,11 @@
       <parameter key="CgoitLeadsOptinBundle">/shared/httpd/duc-contao-5/vendor/cgoit/contao-leads-optin-bundle/contao</parameter>
       <parameter key="Terminal42NodeBundle">/shared/httpd/duc-contao-5/vendor/terminal42/contao-node/contao</parameter>
       <parameter key="ContaoEventRegistrationBundle">/shared/httpd/duc-contao-5/vendor/inspiredminds/contao-event-registration/contao</parameter>
-      <parameter key="CalendarEditorBundle">/shared/httpd/duc-contao-5/vendor/danielgausi/contao-calendareditor-bundle/src/Resources/contao</parameter>
       <parameter key="BugBusterContaoDlstatsExportBundle">/shared/httpd/duc-contao-5/vendor/bugbuster/contao-dlstats-statistic-export-bundle/src/Resources/contao</parameter>
       <parameter key="CodefogTagsBundle">/shared/httpd/duc-contao-5/vendor/codefog/tags-bundle/src/Resources/contao</parameter>
       <parameter key="Terminal42NewsNewsletterBundle">/shared/httpd/duc-contao-5/vendor/terminal42/contao-news_newsletter/contao</parameter>
       <parameter key="PdirMaeEventCategoriesBundle">/shared/httpd/duc-contao-5/vendor/marebe1602/mae_event_categories/contao</parameter>
+      <parameter key="CalendarEditorBundle">/shared/httpd/duc-contao-5/vendor/diversworld/contao-calendar-editor-bundle/src/Resources/contao</parameter>
       <parameter key="ContaoCommentsBundle">/shared/httpd/duc-contao-5/vendor/contao/comments-bundle/contao</parameter>
       <parameter key="CgoitFormFillPdfBundle">/shared/httpd/duc-contao-5/vendor/cgoit/contao-form-fill-pdf-bundle/contao</parameter>
       <parameter key="CgoitCmaceBundle">/shared/httpd/duc-contao-5/vendor/cgoit/contao-cmace-bundle/contao</parameter>
@@ -4209,10 +4209,10 @@
           <argument>/shared/httpd/duc-contao-5/vendor/codefog/contao-news_categories/translations</argument>
           <argument>/shared/httpd/duc-contao-5/vendor/cgoit/contao-leads-optin-bundle/translations</argument>
           <argument>/shared/httpd/duc-contao-5/vendor/terminal42/contao-node/translations</argument>
-          <argument>/shared/httpd/duc-contao-5/vendor/danielgausi/contao-calendareditor-bundle/src/translations</argument>
           <argument>/shared/httpd/duc-contao-5/vendor/codefog/tags-bundle/src/translations</argument>
           <argument>/shared/httpd/duc-contao-5/vendor/terminal42/contao-news_newsletter/translations</argument>
           <argument>/shared/httpd/duc-contao-5/vendor/marebe1602/mae_event_categories/translations</argument>
+          <argument>/shared/httpd/duc-contao-5/vendor/diversworld/contao-calendar-editor-bundle/src/translations</argument>
           <argument>/shared/httpd/duc-contao-5/vendor/contao/comments-bundle/translations</argument>
           <argument>/shared/httpd/duc-contao-5/vendor/cgoit/contao-form-fill-pdf-bundle/translations</argument>
           <argument>/shared/httpd/duc-contao-5/vendor/cgoit/contao-cmace-bundle/translations</argument>
@@ -4301,10 +4301,10 @@
             <argument>vendor/codefog/contao-news_categories/translations</argument>
             <argument>vendor/cgoit/contao-leads-optin-bundle/translations</argument>
             <argument>vendor/terminal42/contao-node/translations</argument>
-            <argument>vendor/danielgausi/contao-calendareditor-bundle/src/translations</argument>
             <argument>vendor/codefog/tags-bundle/src/translations</argument>
             <argument>vendor/terminal42/contao-news_newsletter/translations</argument>
             <argument>vendor/marebe1602/mae_event_categories/translations</argument>
+            <argument>vendor/diversworld/contao-calendar-editor-bundle/src/translations</argument>
             <argument>vendor/contao/comments-bundle/translations</argument>
             <argument>vendor/cgoit/contao-form-fill-pdf-bundle/translations</argument>
             <argument>vendor/cgoit/contao-cmace-bundle/translations</argument>
@@ -20905,12 +20905,6 @@
       <argument type="service" id="InspiredMinds\ContaoEventRegistration\EventRegistration"/>
       <argument type="service" id="Terminal42\NotificationCenterBundle\NotificationCenter"/>
     </service>
-    <service id="DanielGausi\CalendarEditorBundle\Services\CheckAuthService" class="DanielGausi\CalendarEditorBundle\Services\CheckAuthService" public="true" autowire="true" autoconfigure="true">
-      <argument type="service" id="security.helper"/>
-    </service>
-    <service id="DanielGausi\CalendarEditorBundle\Modules\ModuleCalendarEdit" class="DanielGausi\CalendarEditorBundle\Modules\ModuleCalendarEdit" autowire="true" autoconfigure="true">
-      <tag name="container.error" message="Cannot autowire service &quot;DanielGausi\CalendarEditorBundle\Modules\ModuleCalendarEdit&quot;: argument &quot;$module&quot; of method &quot;__construct()&quot; references class &quot;Contao\ModuleModel&quot; but no such service exists."/>
-    </service>
     <service id="bugbuster.dlstatsexport.form.type.request_token" class="BugBuster\DlstatsExportBundle\Form\Type\RequestTokenType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
       <argument type="service" id="contao.csrf.token_manager"/>
@@ -21008,6 +21002,13 @@
     </service>
     <service id="Pdir\MaeEventCategoriesBundle\Model\MaeEventCatModel" class="Pdir\MaeEventCategoriesBundle\Model\MaeEventCatModel" autowire="true" autoconfigure="true"/>
     <service id="Pdir\MaeEventCategoriesBundle\PdirMaeEventCategoriesBundle" class="Pdir\MaeEventCategoriesBundle\PdirMaeEventCategoriesBundle" autowire="true" autoconfigure="true"/>
+    <service id="Diversworld\CalendarEditorBundle\Modules\ModuleCalenderEdit" class="Diversworld\CalendarEditorBundle\Modules\ModuleCalenderEdit" autowire="true" autoconfigure="true">
+      <tag name="container.error" message="Cannot autowire service &quot;Diversworld\CalendarEditorBundle\Modules\ModuleCalenderEdit&quot;: argument &quot;$objModule&quot; of method &quot;Contao\Module::__construct()&quot; has no type-hint, you should configure its value explicitly."/>
+      <call method="setCheckAuthService">
+        <argument type="service" id="Diversworld\CalendarEditorBundle\Services\CheckAuthService"/>
+      </call>
+    </service>
+    <service id="Diversworld\CalendarEditorBundle\Services\CheckAuthService" class="Diversworld\CalendarEditorBundle\Services\CheckAuthService" public="true" autowire="true" autoconfigure="true"/>
     <service id="contao_comments.cron.purge_subscriptions" class="Contao\CommentsBundle\Cron\PurgeSubscriptionsCron" autoconfigure="true">
       <tag name="contao.cronjob" interval="daily" method=""/>
       <argument type="service" id="contao.framework"/>
@@ -22407,8 +22408,6 @@
     <service id=".abstract.instanceof.InspiredMinds\ContaoEventRegistration\NotificationType\EventRegistrationConfirmNotificationType" class="InspiredMinds\ContaoEventRegistration\NotificationType\EventRegistrationConfirmNotificationType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Terminal42\NotificationCenterBundle\NotificationType\NotificationTypeInterface.0.InspiredMinds\ContaoEventRegistration\NotificationType\EventRegistrationWaitingListAdvancementNotificationType" class="InspiredMinds\ContaoEventRegistration\NotificationType\EventRegistrationWaitingListAdvancementNotificationType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.InspiredMinds\ContaoEventRegistration\NotificationType\EventRegistrationWaitingListAdvancementNotificationType" class="InspiredMinds\ContaoEventRegistration\NotificationType\EventRegistrationWaitingListAdvancementNotificationType" autowire="true" autoconfigure="true" abstract="true"/>
-    <service id=".instanceof.Monolog\ResettableInterface.0.monolog.logger.contao.general" class="Monolog\Logger" autowire="true" abstract="true"/>
-    <service id=".abstract.instanceof.monolog.logger.contao.general" class="Monolog\Logger" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.bugbuster.dlstatsexport.form.type.request_token" class="BugBuster\DlstatsExportBundle\Form\Type\RequestTokenType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.bugbuster.dlstatsexport.form.type.request_token" class="BugBuster\DlstatsExportBundle\Form\Type\RequestTokenType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.BugBuster\DlstatsExportBundle\Controller\ExportController" class="BugBuster\DlstatsExportBundle\Controller\ExportController" public="true" autowire="true" abstract="true"/>
@@ -22425,6 +22424,8 @@
     <service id=".abstract.instanceof.Terminal42\NewsNewsletterBundle\NotificationCenter\NewsNewsletterNotificationType" class="Terminal42\NewsNewsletterBundle\NotificationCenter\NewsNewsletterNotificationType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Pdir\MaeEventCategoriesBundle\EventListener\GetAllEventsListener.0.Pdir\MaeEventCategoriesBundle\EventListener\GetAllEventsListener" class="Pdir\MaeEventCategoriesBundle\EventListener\GetAllEventsListener" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.Pdir\MaeEventCategoriesBundle\EventListener\GetAllEventsListener" class="Pdir\MaeEventCategoriesBundle\EventListener\GetAllEventsListener" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Monolog\ResettableInterface.0.monolog.logger.contao.general" class="Monolog\Logger" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.monolog.logger.contao.general" class="Monolog\Logger" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Contao\CommentsBundle\Cron\PurgeSubscriptionsCron.0.contao_comments.cron.purge_subscriptions" class="Contao\CommentsBundle\Cron\PurgeSubscriptionsCron" abstract="true"/>
     <service id=".abstract.instanceof.contao_comments.cron.purge_subscriptions" class="Contao\CommentsBundle\Cron\PurgeSubscriptionsCron" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Contao\CommentsBundle\EventListener\DataContainer\AddCommentFieldsListener.0.contao_comments.listener.data_container.add_comment_fields" class="Contao\CommentsBundle\EventListener\DataContainer\AddCommentFieldsListener" abstract="true"/>

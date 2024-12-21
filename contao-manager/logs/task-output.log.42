@@ -1,15 +1,22 @@
+$ /usr/local/bin/php -q -dmax_execution_time=0 -dmemory_limit=-1 -ddisplay_errors=0 -ddisplay_startup_errors=0 -derror_reporting=0 -dallow_url_fopen=1 -ddisable_functions= -ddate.timezone=CET /shared/httpd/duc-contao-5/public/contao-manager.phar.php composer require danielgausi/contao-calendareditor-bundle=4.3 --no-update --no-scripts --prefer-stable --sort-packages --no-ansi --no-interaction
+
+
+# Process terminated with exit code 0
+# Result: OK
+
+
 > Resolving dependencies using Composer Cloud v3.8.1
 
-[8.4MiB/0.20s] Loading composer repositories with package information
-[101.1MiB/14.02s] Updating dependencies
-[201.5MiB/15.27s] Your requirements could not be resolved to an installable set of packages.
-[201.5MiB/15.28s] 
+[8.4MiB/0.22s] Loading composer repositories with package information
+[79.1MiB/9.81s] Updating dependencies
+[92.7MiB/10.11s] Your requirements could not be resolved to an installable set of packages.
+[92.7MiB/10.11s] 
   Problem 1
-    - Root composer.json requires danielgausi/contao-calendareditor-bundle ^4.3, found danielgausi/contao-calendareditor-bundle[dev-main] but it does not match the constraint.
+    - Root composer.json requires danielgausi/contao-calendareditor-bundle 4.3 (exact version match: 4.3, 4.3.0 or 4.3.0.0), found danielgausi/contao-calendareditor-bundle[4.3.3] but it does not match the constraint.
 
-[201.5MiB/15.28s] <warning>Running update with --no-dev does not mean require-dev is ignored, it just means the packages will not be installed. If dev requirements are blocking the update you have to resolve those problems.</warning>
-[65.9MiB/15.40s] Memory usage: 65.9MB (peak: 236.4MB), time: 15.43s.
-[65.9MiB/15.41s] Finished Composer Cloud resolving.
+[92.7MiB/10.12s] <warning>Running update with --no-dev does not mean require-dev is ignored, it just means the packages will not be installed. If dev requirements are blocking the update you have to resolve those problems.</warning>
+[54.1MiB/10.14s] Memory usage: 54.1MB (peak: 194.36MB), time: 10.17s.
+[54.1MiB/10.15s] Finished Composer Cloud resolving.
 
 
-# Cloud Job ID HDADg3YGRCWDtBXE4AXf4FfdmEjzWJCpwHj1vR7DMLY0FnqQJSNzSYcl4I9uHKMA9knYp4EoBoUqHBVtoEmvFnX failed
+# Cloud Job ID gAo3b0FUqwkgCXeyZyHXzQBA1ifmoFYGncbNFqnB2XFYzv9TF7UxfidvrOJuHZmjHuIG8UJdq88a0JKjKr3Y45QGdBhBN9UMrsNe1jXkRs1k4QRm failed

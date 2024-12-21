@@ -1355,6 +1355,15 @@ $GLOBALS['TL_LANG']['CTE']['nodes'] = ['Nodes', 'Include single or multiple cont
  */
 $GLOBALS['TL_LANG']['ERR']['invalidNodes'] = 'The folder nodes are not allowed: %s';
 
+/*
+ * Tags Bundle for Contao Open Source CMS.
+ *
+ * @copyright  Copyright (c) 2020, Codefog
+ * @author     Codefog <https://codefog.pl>
+ * @license    MIT
+ */
+$GLOBALS['TL_LANG']['MSC']['cfg_tags.add'] = 'Add';
+
 /**
  * Miscellaneous
  */
@@ -1419,15 +1428,6 @@ $GLOBALS['TL_LANG']['MSC']['caledit_ContentElementWithImage'] = "There is an ima
 $GLOBALS['TL_LANG']['MSC']['caledit_error'] = "An error occured.";
 $GLOBALS['TL_LANG']['MSC']['caledit_CloneWarning'] = "You are about to duplicate an event. Be sure that all information is correct, as can't edit them at once after this.";
 $GLOBALS['TL_LANG']['MSC']['caledit_deleteWarning'] = "You are about to delete an event. This can not be reversed.";
-
-/*
- * Tags Bundle for Contao Open Source CMS.
- *
- * @copyright  Copyright (c) 2020, Codefog
- * @author     Codefog <https://codefog.pl>
- * @license    MIT
- */
-$GLOBALS['TL_LANG']['MSC']['cfg_tags.add'] = 'Add';
 
 // vendor/contao/comments-bundle/contao/languages/en/default.xlf
 $GLOBALS['TL_LANG']['MSC']['comments'] = 'Comments';
