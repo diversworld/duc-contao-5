@@ -1,3 +1,0 @@
-<?php //Contao%255CSystem%2523getContainer
-
-return [PHP_INT_MAX, []];

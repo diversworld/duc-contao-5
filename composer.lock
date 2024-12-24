@@ -370,10 +370,10 @@
             "extra": {
                 "contao": {
                     "transifex": {
-                        "project": "contao-botdetection-bundle",
                         "prefix": "master-",
-                        "languages_cto": "src/Resources/contao/languages",
-                        "languages_tx": ".tx"
+                        "project": "contao-botdetection-bundle",
+                        "languages_tx": ".tx",
+                        "languages_cto": "src/Resources/contao/languages"
                     }
                 },
                 "branch-alias": {
@@ -1563,16 +1563,16 @@
         },
         {
             "name": "contao-components/ace",
-            "version": "1.36.5",
+            "version": "1.37.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/ace.git",
-                "reference": "430f5b1442dd70477075a2418e8ef0f58229ddb7"
+                "reference": "6361c60bd46eb49399b23aab2c14e8ac0c342fde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/ace/zipball/430f5b1442dd70477075a2418e8ef0f58229ddb7",
-                "reference": "430f5b1442dd70477075a2418e8ef0f58229ddb7",
+                "url": "https://api.github.com/repos/contao-components/ace/zipball/6361c60bd46eb49399b23aab2c14e8ac0c342fde",
+                "reference": "6361c60bd46eb49399b23aab2c14e8ac0c342fde",
                 "shasum": ""
             },
             "require": {
@@ -1592,9 +1592,9 @@
             "description": "ACE code editor integration for Contao Open Source CMS",
             "support": {
                 "issues": "https://github.com/contao-components/ace/issues",
-                "source": "https://github.com/contao-components/ace/tree/1.36.5"
+                "source": "https://github.com/contao-components/ace/tree/1.37.1"
             },
-            "time": "2024-11-15T08:27:50+00:00"
+            "time": "2024-12-23T09:03:52+00:00"
         },
         {
             "name": "contao-components/chosen",
@@ -3451,15 +3451,15 @@
             },
             "type": "composer-plugin",
             "extra": {
-                "bamarni-bin": {
-                    "bin-links": false,
-                    "target-directory": "tools"
-                },
                 "class": [
                     "Contao\\ManagerPlugin\\Composer\\ArtifactsPlugin",
                     "Contao\\ManagerPlugin\\Composer\\ManagerPluginInstaller",
                     "Contao\\ManagerPlugin\\Composer\\AppAutoloadPlugin"
-                ]
+                ],
+                "bamarni-bin": {
+                    "bin-links": false,
+                    "target-directory": "tools"
+                }
             },
             "autoload": {
                 "psr-4": {
@@ -3858,11 +3858,12 @@
             "dist": {
                 "type": "path",
                 "url": "vendor/diversworld/contao-calendar-editor-bundle",
-                "reference": "3753a1c2f5e50fe4bcf8729fabce6bd5380f8816"
+                "reference": "7240fcc63ee90edf0dd2fa77c7c25b0c6ab039c8"
             },
             "require": {
-                "contao/calendar-bundle": "~5.0",
-                "contao/core-bundle": "~5.0",
+                "contao/calendar-bundle": "^5.3",
+                "contao/core-bundle": "~5.3",
+                "menatwork/contao-multicolumnwizard-bundle": "^3.0",
                 "php": "^8.1"
             },
             "type": "contao-bundle",
@@ -3908,10 +3909,10 @@
             "dist": {
                 "type": "path",
                 "url": "vendor/diversworld/contao-check-bundle",
-                "reference": "06c39ba4c7bc02325f8227340ac82ff5396fed23"
+                "reference": "ade77fff47d748f6f9a9667533c968f963934af6"
             },
             "require": {
-                "contao/core-bundle": "^4.13 || ^5.0",
+                "contao/core-bundle": "^5.3",
                 "php": "^8.1"
             },
             "require-dev": {
@@ -6796,16 +6797,16 @@
         },
         {
             "name": "knplabs/knp-menu",
-            "version": "v3.5.0",
+            "version": "v3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenu.git",
-                "reference": "c39403f7c427d1b72cc56f38df0a075b4b9191fe"
+                "reference": "ac96b711cf7b4178747b0ecde79d7e5e05dbcd28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/c39403f7c427d1b72cc56f38df0a075b4b9191fe",
-                "reference": "c39403f7c427d1b72cc56f38df0a075b4b9191fe",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/ac96b711cf7b4178747b0ecde79d7e5e05dbcd28",
+                "reference": "ac96b711cf7b4178747b0ecde79d7e5e05dbcd28",
                 "shasum": ""
             },
             "require": {
@@ -6863,9 +6864,9 @@
             ],
             "support": {
                 "issues": "https://github.com/KnpLabs/KnpMenu/issues",
-                "source": "https://github.com/KnpLabs/KnpMenu/tree/v3.5.0"
+                "source": "https://github.com/KnpLabs/KnpMenu/tree/v3.6.0"
             },
-            "time": "2024-03-23T15:35:09+00:00"
+            "time": "2024-12-20T10:10:51+00:00"
         },
         {
             "name": "knplabs/knp-menu-bundle",
@@ -8720,16 +8721,16 @@
         },
         {
             "name": "matthiasmullie/scrapbook",
-            "version": "1.5.3",
+            "version": "1.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/matthiasmullie/scrapbook.git",
-                "reference": "c339d56e136713aab532718eff453663b4b38efe"
+                "reference": "6ca64d54d7106deffbb98cb9c6a6f5fdb13ce1f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matthiasmullie/scrapbook/zipball/c339d56e136713aab532718eff453663b4b38efe",
-                "reference": "c339d56e136713aab532718eff453663b4b38efe",
+                "url": "https://api.github.com/repos/matthiasmullie/scrapbook/zipball/6ca64d54d7106deffbb98cb9c6a6f5fdb13ce1f1",
+                "reference": "6ca64d54d7106deffbb98cb9c6a6f5fdb13ce1f1",
                 "shasum": ""
             },
             "require": {
@@ -8743,9 +8744,8 @@
             },
             "require-dev": {
                 "ext-pcntl": "*",
-                "friendsofphp/php-cs-fixer": ">=2.0",
-                "phpunit/phpunit": ">=10.0",
-                "squizlabs/php_codesniffer": ">=3.0"
+                "friendsofphp/php-cs-fixer": ">=3.0",
+                "phpunit/phpunit": ">=10.0"
             },
             "suggest": {
                 "couchbase/couchbase": ">=3.0",
@@ -8808,7 +8808,7 @@
             ],
             "support": {
                 "issues": "https://github.com/matthiasmullie/scrapbook/issues",
-                "source": "https://github.com/matthiasmullie/scrapbook/tree/1.5.3"
+                "source": "https://github.com/matthiasmullie/scrapbook/tree/1.5.4"
             },
             "funding": [
                 {
@@ -8816,7 +8816,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-04-02T13:33:01+00:00"
+            "time": "2024-12-20T11:47:12+00:00"
         },
         {
             "name": "menatwork/contao-multicolumnwizard-bundle",
@@ -8857,8 +8857,8 @@
             "type": "contao-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "3.7.x-dev",
                     "dev-master": "3.6.x-dev",
+                    "dev-develop": "3.7.x-dev",
                     "dev-support/contao3": "3.3.x-dev",
                     "dev-support/contao4.4": "3.4.x-dev"
                 },
@@ -9176,16 +9176,16 @@
         },
         {
             "name": "mvo/contao-group-widget",
-            "version": "v1.5.9",
+            "version": "v1.5.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/m-vo/contao-group-widget.git",
-                "reference": "5e11e8148e1a4c59d2483c4aaaed1fbe64bd67ae"
+                "reference": "ab41577219dccd5d1148505cdc71bd28b78b88ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/m-vo/contao-group-widget/zipball/5e11e8148e1a4c59d2483c4aaaed1fbe64bd67ae",
-                "reference": "5e11e8148e1a4c59d2483c4aaaed1fbe64bd67ae",
+                "url": "https://api.github.com/repos/m-vo/contao-group-widget/zipball/ab41577219dccd5d1148505cdc71bd28b78b88ef",
+                "reference": "ab41577219dccd5d1148505cdc71bd28b78b88ef",
                 "shasum": ""
             },
             "require": {
@@ -9245,9 +9245,9 @@
             ],
             "support": {
                 "issues": "https://github.com/m-vo/contao-group-widget/issues",
-                "source": "https://github.com/m-vo/contao-group-widget/tree/v1.5.9"
+                "source": "https://github.com/m-vo/contao-group-widget/tree/v1.5.10"
             },
-            "time": "2024-10-21T17:20:31+00:00"
+            "time": "2024-12-20T13:04:51+00:00"
         },
         {
             "name": "nelmio/cors-bundle",
@@ -18015,20 +18015,21 @@
         },
         {
             "name": "tecnickcom/tcpdf",
-            "version": "6.7.8",
+            "version": "6.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "7956f5e37863c6a569d5ccfae826f353a12a2493"
+                "reference": "14ffa0e308f5634aa2489568b4b90b24073b6731"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/7956f5e37863c6a569d5ccfae826f353a12a2493",
-                "reference": "7956f5e37863c6a569d5ccfae826f353a12a2493",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/14ffa0e308f5634aa2489568b4b90b24073b6731",
+                "reference": "14ffa0e308f5634aa2489568b4b90b24073b6731",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0"
+                "ext-curl": "*",
+                "php": ">=7.1.0"
             },
             "type": "library",
             "autoload": {
@@ -18075,7 +18076,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tecnickcom/TCPDF/issues",
-                "source": "https://github.com/tecnickcom/TCPDF/tree/6.7.8"
+                "source": "https://github.com/tecnickcom/TCPDF/tree/6.8.0"
             },
             "funding": [
                 {
@@ -18083,7 +18084,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2024-12-13T19:31:40+00:00"
+            "time": "2024-12-23T13:34:57+00:00"
         },
         {
             "name": "terminal42/contao-conditionalformfields",
@@ -19113,31 +19114,33 @@
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
-            "version": "v2.2.7",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tijsverkoyen/CssToInlineStyles.git",
-                "reference": "83ee6f38df0a63106a9e4536e3060458b74ccedb"
+                "reference": "0d72ac1c00084279c1816675284073c5a337c20d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tijsverkoyen/CssToInlineStyles/zipball/83ee6f38df0a63106a9e4536e3060458b74ccedb",
-                "reference": "83ee6f38df0a63106a9e4536e3060458b74ccedb",
+                "url": "https://api.github.com/repos/tijsverkoyen/CssToInlineStyles/zipball/0d72ac1c00084279c1816675284073c5a337c20d",
+                "reference": "0d72ac1c00084279c1816675284073c5a337c20d",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-libxml": "*",
-                "php": "^5.5 || ^7.0 || ^8.0",
-                "symfony/css-selector": "^2.7 || ^3.0 || ^4.0 || ^5.0 || ^6.0 || ^7.0"
+                "php": "^7.4 || ^8.0",
+                "symfony/css-selector": "^5.4 || ^6.0 || ^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0 || ^7.5 || ^8.5.21 || ^9.5.10"
+                "phpstan/phpstan": "^2.0",
+                "phpstan/phpstan-phpunit": "^2.0",
+                "phpunit/phpunit": "^8.5.21 || ^9.5.10"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2.x-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
@@ -19160,9 +19163,9 @@
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
             "support": {
                 "issues": "https://github.com/tijsverkoyen/CssToInlineStyles/issues",
-                "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/v2.2.7"
+                "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/v2.3.0"
             },
-            "time": "2023-12-08T13:03:43+00:00"
+            "time": "2024-12-21T16:25:41+00:00"
         },
         {
             "name": "toflar/cronjob-supervisor",

@@ -2,6 +2,7 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/vendor/diversworld/contao-calendar-editor-bundle" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/public/bundles" />
       <excludeFolder url="file://$MODULE_DIR$/var" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/ausi/slug-generator" />
@@ -259,7 +260,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/sineos/filemanager-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/diversworld/contao-check-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bugbuster/contao-botdetection-bundle_compare" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/diversworld/contao-calendar-editor-bundle" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

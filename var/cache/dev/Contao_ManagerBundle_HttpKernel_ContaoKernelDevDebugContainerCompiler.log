@@ -2212,6 +2212,7 @@ Symfony\Component\DependencyInjection\Compiler\ReplaceAliasByActualDefinitionPas
 Symfony\Component\DependencyInjection\Compiler\ReplaceAliasByActualDefinitionPass: Changed reference of service "InspiredMinds\ContaoEventRegistration\EventListener\DataContainer\EventRegistration\ExportButtonCallbackListener" previously pointing to "cmf_routing.router" to "router".
 Symfony\Component\DependencyInjection\Compiler\ReplaceAliasByActualDefinitionPass: Changed reference of service "InspiredMinds\ContaoEventRegistration\EventListener\DataContainer\EventRegistration\HeaderCallbackListener" previously pointing to "contao.translation.translator" to "translator".
 Symfony\Component\DependencyInjection\Compiler\ReplaceAliasByActualDefinitionPass: Changed reference of service "InspiredMinds\ContaoEventRegistration\EventListener\EventRegistrationFormListener" previously pointing to "contao.translation.translator" to "translator".
+Symfony\Component\DependencyInjection\Compiler\ReplaceAliasByActualDefinitionPass: Changed reference of service "Diversworld\CalendarEditorBundle\Controller\Module\ModuleEventEditor" previously pointing to "contao._logger.monolog.logger.contao.general" to "monolog.logger.contao.general".
 Symfony\Component\DependencyInjection\Compiler\ReplaceAliasByActualDefinitionPass: Changed reference of service "contao_comments.cron.purge_subscriptions" previously pointing to "contao._logger.monolog.logger.contao.cron" to "monolog.logger.contao.cron".
 Symfony\Component\DependencyInjection\Compiler\ReplaceAliasByActualDefinitionPass: Changed reference of service "messenger.bus.default.middleware.send_message" previously pointing to "debug.event_dispatcher" to "event_dispatcher".
 Symfony\Component\DependencyInjection\Compiler\ReplaceAliasByActualDefinitionPass: Changed reference of service ".service_locator.5cAhUFF" previously pointing to "debug.traced.messenger.bus.default" to "messenger.default_bus".
@@ -4019,7 +4020,9 @@ Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Remo
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "Pdir\MaeEventCategoriesBundle\DependencyInjection\PdirMaeEventCategoriesExtension"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "Pdir\MaeEventCategoriesBundle\Model\MaeEventCatModel"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "Pdir\MaeEventCategoriesBundle\PdirMaeEventCategoriesBundle"; reason: unused.
-Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "Diversworld\CalendarEditorBundle\Modules\ModuleCalenderEdit"; reason: unused.
+Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "Diversworld\CalendarEditorBundle\Controller\Module\ModuleCalenderEdit"; reason: unused.
+Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "Diversworld\CalendarEditorBundle\Controller\Module\ModuleEventEditor"; reason: unused.
+Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "Diversworld\CalendarEditorBundle\Hooks\ListAllEventsHook"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "Cgoit\FormFillPdfBundle\CgoitFormFillPdfBundle"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "Cgoit\FormFillPdfBundle\ContaoManager\Plugin"; reason: unused.
 Symfony\Component\DependencyInjection\Compiler\RemoveUnusedDefinitionsPass: Removed service "Cgoit\FormFillPdfBundle\DependencyInjection\CgoitFormFillPdfExtension"; reason: unused.

@@ -1,3 +1,0 @@
-<?php //Contao%255CModule%2523getPublishedSubpagesByPid
-
-return [PHP_INT_MAX, []];

@@ -21002,11 +21002,20 @@
     </service>
     <service id="Pdir\MaeEventCategoriesBundle\Model\MaeEventCatModel" class="Pdir\MaeEventCategoriesBundle\Model\MaeEventCatModel" autowire="true" autoconfigure="true"/>
     <service id="Pdir\MaeEventCategoriesBundle\PdirMaeEventCategoriesBundle" class="Pdir\MaeEventCategoriesBundle\PdirMaeEventCategoriesBundle" autowire="true" autoconfigure="true"/>
-    <service id="Diversworld\CalendarEditorBundle\Modules\ModuleCalenderEdit" class="Diversworld\CalendarEditorBundle\Modules\ModuleCalenderEdit" autowire="true" autoconfigure="true">
-      <tag name="container.error" message="Cannot autowire service &quot;Diversworld\CalendarEditorBundle\Modules\ModuleCalenderEdit&quot;: argument &quot;$objModule&quot; of method &quot;Contao\Module::__construct()&quot; has no type-hint, you should configure its value explicitly."/>
+    <service id="Diversworld\CalendarEditorBundle\Controller\Module\ModuleCalenderEdit" class="Diversworld\CalendarEditorBundle\Controller\Module\ModuleCalenderEdit" autowire="true" autoconfigure="true">
+      <tag name="container.error" message="Cannot autowire service &quot;Diversworld\CalendarEditorBundle\Controller\Module\ModuleCalenderEdit&quot;: argument &quot;$objModule&quot; of method &quot;Contao\Module::__construct()&quot; has no type-hint, you should configure its value explicitly."/>
       <call method="setCheckAuthService">
         <argument type="service" id="Diversworld\CalendarEditorBundle\Services\CheckAuthService"/>
       </call>
+    </service>
+    <service id="Diversworld\CalendarEditorBundle\Controller\Module\ModuleEventEditor" class="Diversworld\CalendarEditorBundle\Controller\Module\ModuleEventEditor" autowire="true" autoconfigure="true">
+      <tag name="monolog.logger" channel="contao.general"/>
+      <argument type="service" id="contao._logger.monolog.logger.contao.general" on-invalid="ignore"/>
+      <argument type="service" id="contao.security.token_checker" on-invalid="ignore"/>
+    </service>
+    <service id="Diversworld\CalendarEditorBundle\Hooks\ListAllEventsHook" class="Diversworld\CalendarEditorBundle\Hooks\ListAllEventsHook" autowire="true" autoconfigure="true">
+      <argument type="service" id="Diversworld\CalendarEditorBundle\Service\CheckAuthService"/>
+      <argument type="service" id="security.token_storage"/>
     </service>
     <service id="Diversworld\CalendarEditorBundle\Services\CheckAuthService" class="Diversworld\CalendarEditorBundle\Services\CheckAuthService" public="true" autowire="true" autoconfigure="true"/>
     <service id="contao_comments.cron.purge_subscriptions" class="Contao\CommentsBundle\Cron\PurgeSubscriptionsCron" autoconfigure="true">
@@ -23735,7 +23744,7 @@
       <argument type="service" id="contao.assets.assets_context"/>
     </service>
     <service id="assets._version_contao-components/ace" class="Symfony\Component\Asset\VersionStrategy\StaticVersionStrategy">
-      <argument>1.36.5</argument>
+      <argument>1.37.1</argument>
       <argument>%%s?v=%%s</argument>
     </service>
     <service id="assets._package_contao-components/ace" class="Symfony\Component\Asset\PathPackage">
