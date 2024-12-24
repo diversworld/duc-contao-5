@@ -1,19 +1,4 @@
 <div class="event layout_full block<?= $this->class ?>">
-<div class="block">
-<?php
-echo "<pre>";
-echo $this->showTemplateVars();
-echo "</pre>";
- 
-  $GLOBALS['TL_BODY'][] = '
-    <style>
-      pre.sf-dump .sf-dump-key {
-      	color: beige;
-      }
-    </style>
-  ';
-?>
-</div>
   <h1 itemprop="name"><?= $this->title ?></h1>
 
   <p class="info"><time datetime="<?= $this->datetime ?>"><?= str_replace("–"," – ",$this->date) ?><?php if ($this->time): ?> <?= $this->time ?><?php endif; ?></time></p>
