@@ -685,10 +685,10 @@
             "extra": {
                 "contao": {
                     "transifex": {
-                        "project": "contao-visitors-bundle",
                         "prefix": "master-",
-                        "languages_cto": "src/Resources/contao/languages",
-                        "languages_tx": ".tx"
+                        "project": "contao-visitors-bundle",
+                        "languages_tx": ".tx",
+                        "languages_cto": "src/Resources/contao/languages"
                     }
                 },
                 "contao-manager-plugin": "BugBuster\\VisitorsBundle\\ContaoManager\\Plugin"
@@ -3858,7 +3858,7 @@
             "dist": {
                 "type": "path",
                 "url": "vendor/diversworld/contao-calendar-editor-bundle",
-                "reference": "7240fcc63ee90edf0dd2fa77c7c25b0c6ab039c8"
+                "reference": "3c056a189acd8c9de54c92be0a115d4e48fdbf2b"
             },
             "require": {
                 "contao/calendar-bundle": "^5.3",
