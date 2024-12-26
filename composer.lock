@@ -3858,7 +3858,7 @@
             "dist": {
                 "type": "path",
                 "url": "vendor/diversworld/contao-calendar-editor-bundle",
-                "reference": "3c056a189acd8c9de54c92be0a115d4e48fdbf2b"
+                "reference": "eb796f823231f44f20e4f7c73ca4e506119a633d"
             },
             "require": {
                 "contao/calendar-bundle": "^5.3",
