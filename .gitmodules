@@ -1,3 +1,3 @@
-[submodule "vendor/mindbird/contao-ccd"]
-	path = vendor/mindbird/contao-ccd
-	url = https://github.com/mindbird/contao-calendar-editor
+[submodule "vendor/mindbird/contao-calendar-editor"]
+	path = vendor/mindbird/contao-calendar-editor
+	url = https://github.com/mindbird/contao-calendar-editor.git
