@@ -1,3 +1,9 @@
 [submodule "vendor/mindbird/contao-calendar-editor"]
 	path = vendor/mindbird/contao-calendar-editor
 	url = https://github.com/mindbird/contao-calendar-editor.git
+[submodule "vendor/diversworld/contao-ducapp-bundle"]
+	path = vendor/diversworld/contao-ducapp-bundle
+	url = https://github.com/diversworld/contao-ducapp-bundle.git
+[submodule "vendor/diversworld/contao-check-bundle"]
+    path = vendor/diversworld/contao-check-bundle
+    url = https://github.com/diversworld/contao-check-bundle.git
