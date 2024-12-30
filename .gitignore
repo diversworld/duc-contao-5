@@ -1,5 +1,6 @@
 /vendor/*
 !/vendor/diversworld/
+!/vendor/mindbird/
 !/vendor/diversworld/contao-ducapp-bundle
 !/vendor/diversworld/contao-calendar-editor-bundle
 /var/
